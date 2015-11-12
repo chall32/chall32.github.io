@@ -1,0 +1,22 @@
+# Site navigation links
+
+- title: Home
+  url: /
+
+- title: "Categories"
+  url: /pages/categories/
+
+- title: "All Posts"
+  url: /pages/all-posts/
+
+- title: LDWin
+  url: https://github.com/chall32/LDWin#ldwin
+
+- title: Old Stuff
+  url: http://www.chall.plus.com/winpe
+
+- title: Comments
+  url: /pages/comments/
+
+- title: About
+  url: /pages/about/

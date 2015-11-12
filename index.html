@@ -1,30 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>Coming Soon</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="polarclouds.co.uk" />
-    <meta name="twitter:title" content="Coming soon" />
-    <meta name="twitter:description" content="Stay tuned for updates." />
-    <meta name="twitter:image" content="http://polarclouds.co.uk/pc-200x200.png" />
-<link rel="shortcut icon" href="http://polarclouds.co.uk/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" />
-  <style type="text/css" media="all">
-    body {
-	font-family: "PT Sans Narrow", Sans-serif;
-	font-size: 21px;
-        background: white;
-	margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%) }
-</style>
-</head>
-<body>
-<h1>Coming soon: polarclouds.co.uk</h1>
-</body>
-</html>
+---
+layout: home
+excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
+tags: [Jekyll, theme, responsive, blog, template]
+image:
+  feature: bridge.jpg
+  credit: mabeybridge.com
+  creditlink: http://www.mabeybridge.com/
+---
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>
+
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

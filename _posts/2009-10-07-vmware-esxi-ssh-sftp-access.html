@@ -1,0 +1,14 @@
+---
+layout: post
+title: VMware ESXi SSH & SCP Access
+date: '2009-10-07T00:09:00.005+01:00'
+tags:
+- ESXi
+- VMware
+modified_time: '2010-01-18T17:51:51.000Z'
+blogger_id: tag:blogger.com,1999:blog-1308168280960455064.post-4041311481884924330
+blogger_orig_url: http://chall32.blogspot.com/2009/10/vmware-esxi-ssh-sftp-access.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.vmware.com/files_inline/images/products_esx_diagram.gif" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="188" src="http://www.vmware.com/files_inline/images/products_esx_diagram.gif" title="VMware ESX + ESXi - Share your physical resources between your virtual machines! (Image: VMware)" width="200" /></a></div>Understandably, the free hypervisors (or Virtual Infrastructure Nodes - VINs - as we used to call them back in the old days) ESX 3i and 4i from VMWare have some limitations over their paid for brethren.<br /><br />One of them is that access via SSH to the server is not available.&nbsp; SCP is also not possible 'out of the box'.<br /><br />This means that remote console or file transfer to the base Linux install via Secure FTP are not possible.<br /><br />However, SSH and SCP can be enabled with this little hack / trick / workaround:<br /><ol><li>At the console of the ESXi, hit ALT+F1 to view the console window</li><li>Enter the word <b>unsupported</b> and press ENTER (nothing will show on the screen)</li><li>A support warning will show if you typed in correctly.</li><li>Enter root login password</li><li>At the ~# prompt type <b>vi /etc/inetd.conf</b> to edit the configuration file<br /></li><li>Find the line #SSH and remove the # by placing the cursor on the sign, press ESC and press x</li><li>Be sure that complete line moves to the left, so that there's no space before SSH</li><li>Save the file by pressing ESC and :wq!</li><li>Back at the ~# type <b>ps aux |grep inetd</b> make a note of the PID for inetd</li><li><b>kill -HUP PID </b>to restart the inetd process<br /></li><li>Now test if SSH is working with PuTTY (Can be downloaded <a href="http://www.chiark.greenend.org.uk/%7Esgtatham/putty/download.html" target="_blank">here</a>).</li><li>If SSH is still not working, try rebooting the ESXi server</li></ol>Use <a href="http://winscp.net/eng/index.php" target="_blank">WinSCP</a> for SCP.<br /><br />Obviously this is not officially supported by VMware, although the functionality enabled by the above is used for troubleshooting by VMware support.<br /><br />Funny what you miss when it's taken away...!<br /><br />- Chris<div class="blogger-post-footer"><p>
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: ! 'ESX Reminder 2: Patching & USB Errors'
+date: '2011-02-02T17:16:00.000Z'
+tags:
+- ESXi
+- Reminder
+- VMware
+- ESX
+modified_time: '2011-02-21T19:01:36.231Z'
+thumbnail: http://2.bp.blogspot.com/_2xKZgKYJlJs/TUmPfxJa71I/AAAAAAAAAvk/o3XcC2HnA8Q/s72-c/plaster250.jpg
+blogger_id: tag:blogger.com,1999:blog-1308168280960455064.post-6159670859149062650
+blogger_orig_url: http://chall32.blogspot.com/2011/02/esx-reminder-2-patching-usb-errors.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_2xKZgKYJlJs/TUmPfxJa71I/AAAAAAAAAvk/o3XcC2HnA8Q/s1600/plaster250.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="160" src="http://2.bp.blogspot.com/_2xKZgKYJlJs/TUmPfxJa71I/AAAAAAAAAvk/o3XcC2HnA8Q/s200/plaster250.jpg" width="200" /></a></div><br /><br /><br /><i>Continuing my series of quick fire reminders for when (a) I *think* I've seen that issue before and (b) I dont remember what the fix is / was.  <br /><br />Previous post <a href="http://chall32.blogspot.com/2009/09/vmware-esx-reminders.html" target="_blank">here</a> and possibly <a href="http://chall32.blogspot.com/2010/01/vmware-esx-35-esx-4-reset-lost-or.html" target="_blank">here</a></i>.<br /><br /><br /><br /><br /><br /><b><span style="font-size: large;">Simple Manual ESX or ESXi Patching / Driver updates:</span></b><br /><br /><ol><li>Put host into Maintenance Mode</li><li>Install vSphere CLI from <a href="http://downloads.vmware.com/d/details/vcli41/ZHcqYmRoaCpiZHRAag==" target="_blank">here</a> (if not already done) </li><li>Open vSphere CLI</li><blockquote style="font-family: &quot;Courier New&quot;,Courier,monospace;">vihostupdate.pl --server X.X.X.X --install --bundle update-bundle.zip </blockquote><li>Reboot Host (if required) </li></ol><br /><br /><br /><b><span style="font-size: large;">"URB timed out - USB device may not respond"</span></b><br /><br />Seen on just one out of four identical HP DL580 G7 ESX4.1 builds:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_2xKZgKYJlJs/TUmJ-BwuZcI/AAAAAAAAAvg/mB_0SKDegFw/s1600/USB-Error.PNG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="198" src="http://2.bp.blogspot.com/_2xKZgKYJlJs/TUmJ-BwuZcI/AAAAAAAAAvg/mB_0SKDegFw/s640/USB-Error.PNG" width="640" /></a></div><br /><br />Tried all sorts to fix, unplug KVM, update BIOS, reset default BIOS settings etc etc etc<br /><br />Resolved via ILO3 update to firmware v1.16 (11 Jan 2011) Download <a href="http://h20000.www2.hp.com/bizsupport/TechSupport/SoftwareDescription.jsp?lang=en&amp;cc=uk&amp;prodTypeId=15351&amp;prodSeriesId=4142916&amp;swItem=MTX-76ec563f5ab2426e9b711210c8&amp;prodNameId=4142792&amp;swEnvOID=4024&amp;swLang=8&amp;taskId=135&amp;mode=5">here</a><br /><br /><br />- Chris<div class="blogger-post-footer"><p>
+
