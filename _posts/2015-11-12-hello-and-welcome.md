@@ -13,7 +13,7 @@ Thank you for dropping in.  I hope you like what you see.  Those of you familiar
 
 So why the move?  Well, have a read [here]({{site.url}}/pages/about) go on, I'll wait…
 
-OK, so whats new?  Quite a lot actually! [{{site.url}}]({{site.url}}) is hosted on [Github](github.com) and is powered by [Jekyll](jekyllrb.com).  
+OK, so whats new?  Quite a lot actually! [{{site.url}}]({{site.url}}) is hosted on [Github](https://github.com) and is powered by [Jekyll](http://jekyllrb.com).  
 
 What's Jekyll I hear you cry..  Jekyll is actually pretty cool.  Put quickly and simply Jekyll is a content engine that creates static html webpages from dynamic components such as templates, partials, liquid code, markdown, etc.  Kinda like a polar cloud, something that appears static, yet is made of lots of tiny moving parts…. 
 
@@ -23,8 +23,8 @@ So why the move?
 Well, have a read [ here ]( { { site.url } } /pages/about ) go on, I'll wait…
 
 OK, so whats new?  Quite a lot actually!  
-[ { { site.url } } ] ( { { site.url } } ) is hosted on [ Github ]( github.com ) 
-and is powered by [ Jekyll ]( jekyllrb.com ).  
+[ { { site.url } } ] ( { { site.url } } ) is hosted on [ Github ]( https://github.com ) 
+and is powered by [ Jekyll ]( http://jekyllrb.com ).  
 {% endhighlight %}
 Pretty cool hey?  Notice the brackets etc?  Certainly a simpler blogging experience not having to faff about with html etc etc. Less faffing on my end means even more great content from you favorite tech blogger, yours truly (ah... you're too kind!)
 
