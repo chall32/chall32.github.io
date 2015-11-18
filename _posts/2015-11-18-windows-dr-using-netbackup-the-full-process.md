@@ -33,13 +33,13 @@ Follows is the COMPLETE process I used to successfully recover the server using 
 ### Reference Process: Veritas TECH56473 / 000081333 
 The process I followed is based on the Vertias KB article: Use NetBackup to perform a restore for a total and complete recovery of Windows client(s) that include C: (and other system) drive(s), Shadow Copy Component, and/or System_State from a reliable full MS-Windows backup without IDR or BMR in the event of a Disaster (or need to fall back to a known working state).
 
-Available here: https://www.veritas.com/support/en_US/article.TECH56473 or here: https://www.veritas.com/support/en_US/article.000081333  Should those links die and you are in an emergency situation, I've also attached a PDF copy of the Veritas KB article here: [Veritas-TECH56473.pdf]({{site.url}}/documents/Veritas-TECH56473.pdf)
+Available here: [https://www.veritas.com/support/en_US/article.TECH56473](https://www.veritas.com/support/en_US/article.TECH56473) or here: [https://www.veritas.com/support/en_US/article.000081333](https://www.veritas.com/support/en_US/article.000081333). Should those links die and you are in an emergency situation, I've also attached a PDF copy of the Veritas KB article here: [Veritas-TECH56473.pdf]({{site.url}}/documents/Veritas-TECH56473.pdf)
 
 ### My Notes on the Reference Process
 Follows are my notes to supplement the process.
 
 #### 1. Setup and Install Windows
-I used a "vanilla" version of Windows.  I wanted the install as clean as possible; no other stuff, just Winds in it's purest form given that I was going to overwrite my Windows install from the Windows install on tape.
+I used a "vanilla" version of Windows.  I wanted the install as clean as possible; no other stuff, just Windows in it's purest form given that I was going to overwrite my Windows install from the Windows install on tape.
 
 Should you not have a copy of a vanilla Windows to match the version you are restoring, You can download a copy from here: 
 
@@ -115,7 +115,7 @@ Restore 'em if you got 'em.
 For some reason, my server wouldn't open a cmd prompt at this point..  Therefore I used services.msc and manually stopped the NetBackup service in there.  
 
 
-#### 9. Transfer logs from restore before rebooting! 
+#### 9. Transfer logs from restore before rebooting
 As per the process, my NetBackup logs were not on the system drive, so I was confident I could still get a them even after a reboot.  If I need to reboot the server from, say, an Ubuntu CD just to get the logs off, then so be it.
 
 REBOOT (FINALLY!!!)
