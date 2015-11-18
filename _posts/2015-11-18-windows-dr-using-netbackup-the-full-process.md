@@ -53,7 +53,7 @@ Should you not have a copy of a vanilla Windows to match the version you are res
 Don't forget to service pack your install to match the version of Windows you are restoring.  Strange things happen when you restore different service pack versions!
 
 #### 2. Configure Network
-I kept it simple and did not team my NICs as they were in the O/S being restored.  Again, I wanted to keep it as simple as possible, so I simply configured one production and one backup NIC witrh the correct IP config.
+I kept it simple and did not team my NICs as they were in the O/S being restored.  Again, I wanted to keep it as simple as possible, so I simply configured one production and one backup NIC with the correct IP config.
 
 #### 3. Install NetBackup Client
 Again, you want to match your NetBackup client version with the version on your NetBackup master / media server. 
