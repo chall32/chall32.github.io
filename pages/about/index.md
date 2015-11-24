@@ -18,7 +18,7 @@ The name polarclouds comes from those super cool stratospheric beautiful whips o
 
 To the layperson, a polar cloud looks beautiful just hanging there stationary in the twilight sun.
 
-To those in the know, a polar cloud is actually a fast moving, constantly changing mass of tiny moving parts coming together to make something cohesive 
+To those in the know, a polar cloud is actually a fast moving, constantly changing mass of tiny moving parts coming together to make something cohesive.
 
 _**Polar clouds** – constantly changing, constantly adapting, constantly looking beautiful, constantly at peace with their environment…_
 
