@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Re-Arm Remote Desktop Session Host
 date: '2015-03-16T12:16:00.000Z'

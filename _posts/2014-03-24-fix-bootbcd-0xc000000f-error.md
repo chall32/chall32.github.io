@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Fix Boot/BCD 0xc000000f Error
 date: '2014-03-24T08:00:00.000Z'

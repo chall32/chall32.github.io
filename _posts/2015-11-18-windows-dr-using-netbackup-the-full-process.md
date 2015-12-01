@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Windows Disaster Recovery Using NetBackup - The Full Process
 modified:

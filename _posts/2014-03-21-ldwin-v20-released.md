@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: LDWin v2.0 Released
 date: '2014-03-21T18:04:00.000Z'

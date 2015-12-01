@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Monitor Your ADSL / VDSL Connection Statistics via Twitter
 date: '2015-04-13T20:44:00.000+01:00'
