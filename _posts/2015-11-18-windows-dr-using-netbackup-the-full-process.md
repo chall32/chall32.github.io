@@ -10,7 +10,8 @@ date: 2015-11-18T18:51:33+00:00
 First off, is it Symantec or Veritas NetBackup? :oS
 
 {% include _toc.html %}
-<style>
+<div>
+<style scoped>
 table{
     width: 70%;
     border-collapse: collapse;
@@ -25,6 +26,7 @@ td{
 tr:nth-child(even) {
     background-color: #efefef;}
 </style>
+</div>
 As time marches on, those Windows server installs out there get older and older.  So does the hardware it is running on.  Sure, most servers these days are virtual or cloud based so no one worries about hardware nowadays do they?  Well, unfortunately there is still plenty of "physical" servers out there; actual hardware running actual an Windows O/S "on the tin" so to speak.
 
 So sure enough I was asked to run a disaster recovery of a Windows 2008R2 server that had managed to loose it's O/S drive.  Both drives of a mirrored pair had failed. Yes, I know, unlucky to loose both O/S drives, but there you go.
