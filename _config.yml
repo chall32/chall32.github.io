@@ -2,8 +2,8 @@
 
 title:            Polar Clouds
 locale:           en_GB
-url:		  http://polarclouds.co.uk
-
+url:		  https://polarclouds.co.uk
+enforce_ssl:	  polarclouds.co.uk
 
 # Jekyll configuration
 
