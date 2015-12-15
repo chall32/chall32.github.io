@@ -2,7 +2,10 @@
 comments: true
 layout: post
 title: Automate That!
-tags: []
+tags: 
+- Speed
+image:
+  thumb: iftttzap.png
 date: 2015-11-24T18:30:00+00:00
 ---
 <img style="float: right; margin: 0px 0px 10px 10px;" alt="Zapier and IFTTT" src="/images/iftttzap.png">
