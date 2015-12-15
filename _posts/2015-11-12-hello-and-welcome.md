@@ -6,7 +6,7 @@ modified:
 tags:
 - Layout and Template
 image:
-  thumb: pc-200x200.png
+  thumb: icons/pc-200x200.png
 date: 2015-11-12T22:00:00+00:00
 ---
 <img style="float: right; margin: 0px 0px 10px 10px;" alt="Modem Tweet" src="/images/icons/pc-200x200.png">
