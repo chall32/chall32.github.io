@@ -5,7 +5,8 @@ excerpt: Lets use our WDS server to deploy something other than Windows...
 tags:
 - Deployment
 - Windows
-thumb: /images/wdsesxi.png
+image:
+  thumb: wdsesxi.png
 comments: true
 date: 2015-12-15T19:00:00+00:00
 ---
@@ -49,7 +50,7 @@ C:\RemoteInstall\Boot\x64\
 {% endhighlight %}
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="pxelinux boot files 3" src="/images/wdsesxi03.png">
 
-Rename the Microsoft pxeboot.n12 files to pxeboot.0 allow them to be called from PXElinux:
+Rename the Microsoft pxeboot.n12 files to pxeboot.0 to allow them to be called from PXElinux:
 {% highlight text %}
 rename C:\RemoteInstall\Boot\x86\pxeboot.n12 pxeboot.0
 rename C:\RemoteInstall\Boot\x64\pxeboot.n12 pxeboot.0
