@@ -26,7 +26,7 @@ kramdown:
 # Site owner
 owner:
   name: Chris Hall
-  avatar: ch200x200.jpg
+  avatar: pages/ch200x200.jpg
   bio: "Adjusting technology to make it fit my requirements...<br><br>Windows, Linux, Virtualisation, Unified Computing & Cloud Offerings Design Engineer."
   email:
   disqus-shortname: chall32
