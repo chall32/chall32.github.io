@@ -11,7 +11,7 @@ File this one under a post for another day / ah yes, I've seen that before, cant
 
 {% include _toc.html %}
 
-![](/images/bcderror.jpg)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="BCD Error" src="/images/fix-bootbcd-0xc000000f-error/bcderror.jpg">
 
 That's:
 
@@ -42,12 +42,12 @@ And this is a comment.
 4. <span style="font-family: Courier New, Courier, monospace;">**list partition**</span>  
 5. Select the first primary partition. In the screenshot below, the partition to select is partition 2, so <span style="font-family: Courier New, Courier, monospace;">**select partition 2**</span>:  
 
-   ![](/images/diskpart.jpg)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="BCD Error Diskpart" src="/images/fix-bootbcd-0xc000000f-error/diskpart.jpg">
 
 6. <span style="font-family: Courier New, Courier, monospace;">**detail partition**</span>  
 7. Ensure that the partition is marked as Active: Yes  
 
-   ![](/images/active.jpg)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="BCD Error Active" src="/images/fix-bootbcd-0xc000000f-error/active.jpg">
 
 8. If not, then <span style="font-family: Courier New, Courier, monospace;">**active**</span> to set the partition active  
 9. <span style="font-family: Courier New, Courier, monospace;">**exit**</span> to exit diskpart  

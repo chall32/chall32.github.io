@@ -2,7 +2,7 @@
 layout: page
 title: About
 image:
-  feature: polarclouds.jpg
+  feature: pages/polarclouds.jpg
   credit: François Guerraz
   creditlink: https://en.wikipedia.org/wiki/Polar_stratospheric_cloud
 ---

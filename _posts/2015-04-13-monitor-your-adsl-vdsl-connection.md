@@ -7,8 +7,10 @@ tags:
 - Development
 - Andriod
 - ADSL
+image:
+  thumb: monitor-your-adsl-vdsl-connection/HG612Tweet.png
 ---
-<img style="float: right; margin: 0px 0px 10px 10px;" alt="Modem Tweet" src="/images/HG612Tweet.png">
+<img style="float: right; margin: 0px 0px 10px 10px;" alt="Modem Tweet" src="/images/monitor-your-adsl-vdsl-connection/HG612Tweet.png">
 Just under a year ago now I was fortunate enough to be able to upgrade from ADSL to FTTC (Fibre To The Cabinet) VDSL broadband.
 
 {% include _toc.html %}
@@ -38,9 +40,8 @@ Team this with the native python twitter client [https://pypi.python.org/pypi/tw
 
 I now (I didn't before - but thats a different story for another day) run a Huawei HG612 Modem on my VDSL broadband connection.  I've loaded custom firmware on it as detailed on the brilliant Kitz Wiki: [Huawei HG612 FTTC Modem & Line Stats](http://www.kitz.co.uk/routers/hg612unlock.htm)  
 
-My modem requires a couple of telnet commands to offer me up it's line stats:  
-
-![](/images/stats.jpg)
+My modem requires a couple of telnet commands to offer me up it's line stats:
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="stats" src="/images/monitor-your-adsl-vdsl-connection/stats.jpg">
 
 So that's `sh` (to open busybox) and `xdslcmd info --stats` to get the goods.  
 
@@ -107,22 +108,18 @@ The Steps to enable tweeting from the command line (and hence Powershell) are as
 2. Once python is installed, open a command prompt and navigate to C:\python34\Scripts
 3. Issue the command `pip install twitter` 
 4. You should see the following run though:
-
-   ![](/images/piptwitter.jpg)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="piptwitter" src="/images/monitor-your-adsl-vdsl-connection/piptwitter.jpg">
 
 5. Now issue the command `twitter.exe`
 6. A browser window should open prompting you to enter your twitter account credentials (remember to use a twitter account other than you main twitter account so that twitter notifications trigger correctly)
-7. Authorize the app and enter the pin into the command line
-
-   ![](/images/auth.jpg)
+7. Authorize the app and enter the pin into the command line:
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="auth" src="/images/monitor-your-adsl-vdsl-connection/auth.jpg">
 
 8. Quick test:
-
-   ![](/images/tweethello.jpg)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="tweethello" src="/images/monitor-your-adsl-vdsl-connection/tweethello.jpg">
 
 9. Ah yea, all good:
-
-   ![](/images/tweettest.jpg)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="tweettest" src="/images/monitor-your-adsl-vdsl-connection/tweettest.jpg">
 
 To tweet from powershell, we just use Invoke-Command as follows:  
 
@@ -131,12 +128,10 @@ Invoke-Command {C:\Python34\Scripts\twitter.exe set $tweet}
 {% endhighlight %}
 
 Finally save the script and schedule via windows task scheduler:  
-
-![](/images/schedule.png)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="schedule" src="/images/monitor-your-adsl-vdsl-connection/schedule.png">
 
 That's it !!!  
-
-![](/images/Screenshot_2015-04-15-11-26-30.png)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="screenshot" src="/images/monitor-your-adsl-vdsl-connection/Screenshot_2015-04-15-11-26-30.png">
 
 For a full copy of the script, head on over to [https://github.com/chall32/Tweet-DSLStats](https://github.com/chall32/Tweet-DSLStats)  
 

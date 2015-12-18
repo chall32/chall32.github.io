@@ -125,7 +125,8 @@ REBOOT (FINALLY!!!)
 
 #### Post First Boot
 On my trip trough this process we are all good up until this point.  We were then met by the following:
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Modem Tweet" src="/images/dr-bcd.jpg">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="BCD Error" src="/images/windows-dr-using-netbackup-the-full-process/dr-bcd.jpg">
+
 Yep, a non-booting system.  OK the BCD has got a tad screwed.  Here is how I fixed it:
 
 1. Boot from Windows install disc 

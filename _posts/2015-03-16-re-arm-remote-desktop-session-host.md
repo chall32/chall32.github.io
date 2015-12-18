@@ -6,8 +6,10 @@ date: '2015-03-16T12:16:00.000Z'
 tags:
 - RDP
 - Windows
+image:
+  thumb: re-arm-remote-desktop-session-host/Remote_desktop_connection_icon.png
 ---
-<img style="float: right; margin: 0px 0px 10px 10px;" alt="Modem Tweet" src="/images/Remote_desktop_connection_icon.png">
+<img style="float: right; margin: 0px 0px 10px 10px;" alt="RDP" src="/images/re-arm-remote-desktop-session-host/Remote_desktop_connection_icon.png">
 So here is a little fix for an unlicensed remote desktop session host I found...
 
 {% include _toc.html %}
@@ -38,7 +40,7 @@ Re-arm your remote desktop session host evaluation to allow for another 120 days
 
 2. Right click GracePeriod key and select Permissions.  Grant Administrators full control as shown below: 
 
-   ![](/images/gp.jpg)
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Wiring Mess 1" src="/images/re-arm-remote-desktop-session-host/gp.jpg">
 
 3. Delete the `L$RTMTIMEBOMB` value leaving only the `(default)` value
 4. Reboot your remote desktop session host server

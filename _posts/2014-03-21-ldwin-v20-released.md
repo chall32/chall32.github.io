@@ -19,11 +19,11 @@ LDWin is Network Link Discovery for Windows
 
 Link discovery is the process of ascertaining information from directly connected networking devices, such as network switches. Consider this for a moment:  
 
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Modem Tweet" src="/images/wiringmess1.jpg">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Wiring Mess 1" src="/images/ldwin-v20-released/wiringmess1.jpg">
 
 or
 
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Modem Tweet" src="/images/wiringmess2.jpg">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Wiring Mess 2" src="/images/ldwin-v20-released/wiringmess2.jpg">
 
 Do you know where those network cables go?  
 

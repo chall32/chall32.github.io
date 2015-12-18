@@ -5,10 +5,10 @@ title: Automate That!
 tags: 
 - Speed
 image:
-  thumb: iftttzap.png
+  thumb: automate-that/iftttzap.png
 date: 2015-11-24T18:30:00+00:00
 ---
-<img style="float: right; margin: 0px 0px 10px 10px;" alt="Zapier and IFTTT" src="/images/iftttzap.png">
+<img style="float: right; margin: 0px 0px 10px 10px;" alt="Zapier and IFTTT" src="/images/automate-that/iftttzap.png">
 Why not put the internet to work for you?
 
 Internet automation apps are nothing new.  
@@ -26,35 +26,35 @@ Having said that there is no reason why you could not use some other form of not
 {% include _toc.html %}
 
 ### Tweet New Polar Clouds Posts (IFTTT Recipe)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Polarclouds Tweet" src="/images/polarclouds-tweet.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Polarclouds Tweet" src="/images/automate-that/polarclouds-tweet.png">
 Post a tweet to [@PolarCloudsUK](https://twitter.com/polarcloudsuk) when a new blog post appears at [{{ site.url }}]({{ site.url }}). Include post URL.
 
 ### Tell me the Final Aresnal Score (IFTTT Recipe)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Arsenal Score Tweet" src="/images/tweet-gunners.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Arsenal Score Tweet" src="/images/automate-that/tweet-gunners.png">
 Tweet [me](https://twitter.com/chall32) the final score of the Arsenal match.
 
 ### Tell me Tomorrow's Weather (IFTTT Recipe)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet Tonmorrow's Weather" src="/images/tweet-weather.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet Tonmorrow's Weather" src="/images/automate-that/tweet-weather.png">
 At 10pm in the evening, tweet [me](https://twitter.com/chall32) tomorrow's weather forecast. Include a 10 day forecast URL.
 
 ### Tell me if "Nexus" is Posted at avforums (Zapier Zap)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet if Nexus in avforums" src="/images/zap-avforums.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet if Nexus in avforums" src="/images/automate-that/zap-avforums.png">
 Follow [avforums](https://www.avforums.com/forums/) mobile phone classifieds [rss feed](https://www.avforums.com/forums/mobile-phone-classifieds.330/index.rss), filter feed item title to contain the text "nexus". If filter matches, tweet [me](https://twitter.com/chall32)
 
 ### Tell me if there is a New CyanogenMod Blog Post (Zapier Zap)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet if new CM Blog Post" src="/images/zap-cmblog.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet if new CM Blog Post" src="/images/automate-that/zap-cmblog.png">
 Follow CyanogenMod's blog [rss feed](http://www.cyanogenmod.org/feed) and tell [me](https://twitter.com/chall32) when a new blog post appears at [www.cyanogenmod.org](http://www.cyanogenmod.org/blog)
 
 ### Tell me if any VMware related Jobs are posted in Kent (Zapier Zap)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet VMware Jobs" src="/images/zap-jobserve.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet VMware Jobs" src="/images/automate-that/zap-jobserve.png">
 Nice one this.  Create an account on Jobserve, create a search (I use "VMware" and "Kent" as my search terms) and use the alert function (bell icon on the Jobserve search results) to create an RSS feed and create a Zap to monitor the Jobserve custom rss feed.  Tweet [me](https://twitter.com/chall32) job title and a link to newly posted job vacancies.
 
 ### Tell me About Unplanned Events on the M20 Motorway (Zapier Zap)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet M20 Incidents" src="/images/zap-m20.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet M20 Incidents" src="/images/automate-that/zap-m20.png">
 Follow [Highways England](http://www.highways.gov.uk/traffic-information/) traffic information [rss feed](http://hatrafficinfo.dft.gov.uk/feeds/rss/UnplannedEvents.xml), filter feed item title to contain the text "M20". If filter matches, tweet [me](https://twitter.com/chall32).  Can be extended to cover other motorways too (M25 I'm looking at you!)
 
 ### Tell me if the OP Posts to an XDA Thread (Zapier Zap)
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet XDA OP" src="/images/zap-xda.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Tweet XDA OP" src="/images/automate-that/zap-xda.png">
 Following custom ROM threads on [xda-developers](http://forum.xda-developers.com/) can be painful, with any Tom, Dick, Harry posting XYZ in the forum threads.  
 Over the years, it occured to me that I'm really only intrested what the Original Poster (OP) - the custom ROM developer - has to say. For example "I've posted a new ROM build" or "Yes, fix for that is...". So here is how to get notified of OP posts on XDA forums.  
 
