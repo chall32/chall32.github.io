@@ -8,7 +8,7 @@ image:
 comments: true
 date: '2013-07-03T17:43:00.001+01:00'
 ---
-<img style="float: right; margin: 0px 0px 10px 10px;" alt="Lost n Found" src="/images/ucs-blade-discovery-failed/L-F.jpg">
+<img style="float: right; margin: 0px 0px 10px 10px;" alt="Lost n Found" src="/images/ucs-blade-discovery-failed/L-F.jpg"><br>
 A simple job then; lift and shift some Cisco UCS blades from a legacy site to into the Datacentre to help with capacity for consolidation in the Datacentre.
 
 Unfortunately a simple job turned into a bit of a nightmare with the destination UCS deciding not to play nicely with the recycled blades. 
