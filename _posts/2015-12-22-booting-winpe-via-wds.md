@@ -15,7 +15,7 @@ Previously we configured a Windows 2012R2 Windows Deployment Services (WDS) Serv
 
 Next, we upgraded our WDS server setup to also deploy VMware ESXi. Again have a read [here](/deploying-vmware-esxi-via-wds/) to see what we did next. 
 
-Now it's time use our WDS server to alow us to quickly boot some diagnostic tools. 
+Now it's time use our WDS server to allow us to quickly boot some diagnostic tools. 
 
 This time: Windows Preinstallation Environment (WinPE).
 
@@ -24,7 +24,7 @@ This time: Windows Preinstallation Environment (WinPE).
 ### Windows Preinstallation Environment Preamble
 For those unfamiliar with it, Windows Preinstallation Environment (WinPE) is a lightweight version of Windows used for the deployment of PCs, workstations, and servers, or troubleshooting an operating system while it is offline. More info [here](https://en.wikipedia.org/wiki/Windows_Preinstallation_Environment).
 
-For this, I'll use my (now ancient) Windows 7 Preinstalltion Environment (Win7PE) image I built with [WinBuilder](http://winbuilder.net/) back in 2009.  I'm not going to cover the creation of a Windows PE image here as there are plenty of guides out there that can show you how to create your own Win7PE image.
+For this, I'll use my (now ancient) Windows 7 Preinstallation Environment (Win7PE) image I built with [WinBuilder](http://winbuilder.net/) back in 2009.  I'm not going to cover the creation of a Windows PE image here as there are plenty of guides out there that can show you how to create your own Win7PE image.
 
 One such guide is here:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2vCyIIqkeiM"> </iframe>
@@ -85,7 +85,7 @@ Next time Acronis Disk Director and other tools.
 <br>
 
 ### Fixing "The boot files for this architecture are not installed on the server" Error
-What looks like quite a catastrophic error is actully quite easilly fixed.  Remember where we added our PXElinux files to our WDS sever [here](/deploying-vmware-esxi-via-wds/#step-1-wds-client-boot-image)?
+What looks like quite a catastrophic error is actually quite easily fixed.  Remember where we added our PXElinux files to our WDS sever [here](/deploying-vmware-esxi-via-wds/#step-1-wds-client-boot-image)?
 Well, we need to temporarily back the boot file change out thus allowing us to add boot images to our WDS server. 
 
 Open explorer and browse to C:\RemoteInstall\Boot\x86.
