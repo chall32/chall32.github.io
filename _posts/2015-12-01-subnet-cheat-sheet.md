@@ -14,6 +14,7 @@ Here is a cheat sheet here for good keeping and future reference. The /30 table 
 <div>
 <style scoped>
 table{
+    margin: 0 auto;
     width: 70%;
     border-collapse: collapse;
     border-spacing: 0;
