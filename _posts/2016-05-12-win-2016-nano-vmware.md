@@ -96,7 +96,7 @@ Looking in the folder, we can see we have indeed created a 2016 Nano Server imag
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Folder of files" src="/images/win-2016-nano-vmware/2016vm05.png">
 
-OK, so we have a Windows .vhd virtual disk file.  How can we convert this to a VMware .vmhd virtual disk file?
+OK, so we have a Windows .vhd virtual disk file.  How can we convert this to a VMware .vmdk virtual disk file?
 
 Easy! Use WinImage [www.winimage.com](http://www.winimage.com) to convert the disk file.
 
