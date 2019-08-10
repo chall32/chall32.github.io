@@ -6,7 +6,7 @@ tags:
 - VMware
 - Pro-Tip
 image:
-  thumb: dt90e-repair/stat00.jpg
+  thumb: reset-lost-srm-passwords/reset-srm-passwd-00.jpg
 comments: true
 date: 2019-08-10T16:20:00+00:00
 ---
