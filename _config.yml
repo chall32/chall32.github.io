@@ -40,14 +40,14 @@ titlecase: true
 owner:
   name: Chris Hall
   avatar: pages/ch200x200.jpg
-  bio: "Adjusting technology to make it fit my requirements...<br><br>Windows, Linux, Virtualisation, Unified Computing & Cloud Offerings Design Engineer."
+  bio: "Making technology fit my requirements...<br><br>Windows, Linux, Virtualisation, Unified Computing & Cloud Offerings Design Engineer."
   email:
   disqus-shortname: chall32
   twitter: PolarCloudsUK
   twitter-personal: chall32
   facebook: #username
   google:
-    plus: u/0/103894884565976994275
+    plus: #u/0/103894884565976994275
     analytics:
     verify:
     ad-client:
