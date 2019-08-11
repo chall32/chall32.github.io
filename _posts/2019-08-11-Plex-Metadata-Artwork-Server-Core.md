@@ -9,7 +9,7 @@ tags:
 image:
   thumb: Plex-Metadata-Artwork-Server-Core/Plex-Thumb.png
 comments: true
-date: 2019-08-17T09:00:00+00:00
+date: 2019-08-11T09:00:00+00:00
 ---
 <img style="float: right; margin: 0px 0px 10px 10px;" alt="Plex Logo" src="/images/Plex-Metadata-Artwork-Server-Core/Plex-Thumb.png">
 Here’s how I fixed Plex TV metadata and artwork not downloading when running Plex server on Windows Server 2016 / 2019 Core. 
