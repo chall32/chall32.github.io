@@ -20,6 +20,8 @@ Quick primer:
 - Pi: Raspberry Pi (shortened to Pi in this instance): A low cost, credit-card sized computer: [See this PolarClouds post from 2011!](https://polarclouds.co.uk/raspberry-pi-16-linux-pc/) Now available in it's [fourth iteration](https://www.raspberrypi.org/)
 - Hole: An empty space in an object, usually with an opening to the object's surface, or an opening that goes completely through an object. [Source](https://dictionary.cambridge.org/dictionary/english/hole).
 
+**UPDATE:** See [Why I was For, Against, then For Browser DNS over HTTPS](https://polarclouds.co.uk/for-against-for-doh/)
+
 {% include _toc.html %}
 ## Objectives
 It's no secret, I'm not a fan of adverts.  Over the years I've posted about my disdain for adverts [several times](https://polarclouds.co.uk/pages/categories#Adverts). I think this sums up my feelings nicely:
