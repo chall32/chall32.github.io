@@ -8,7 +8,7 @@ tags:
 - Pro-Tip
 - Free
 image:
-  thumb: pfsense-vpn-server/pfsense-vpn-00.png
+  thumb: pfsense-vpn-server/pfsense-vpn-server-00.png
 comments: true
 date: 2019-09-22T00:00:00+00:00
 ---
