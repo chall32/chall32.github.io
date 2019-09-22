@@ -47,31 +47,18 @@ Luckily Mozilla are [ahead of the game](https://support.mozilla.org/en-US/kb/con
 Essentially, their idea is to build into Firefox a check where by the browser will query DNS for a certain "canary" domain. The result returned from DNS will govern whether the browser switches to from standard (non-DoH) DNS to DoH or not.
 
 The logic is as follows. First the browser makes the query to standard (non https) DNS for [use-application-dns.net](https://use-application-dns.net/). Standard DNS will then return one of the following:
-<div>
-<style scoped>
-table{
-    margin: 0 auto;
-    width: 70%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border:1px solid #000000; }
-th{
-    text-align: center;
-    border:1px solid #000000; }
-td{
-    text-align: center;
-    border:1px solid #000000;}
-tr:nth-child(even) {
-    background-color: #efefef;}
-</style>
-</div>
 
-| Standard DNS Return | Browser Action 
-| ------------------- | -------------- |
-| A or AAAA records <br>(valid IP addresses) | Enable DNS over HTTPS Functionality <br>(bypassing standard DNS) |
-| NXDOMAIN or SERVFAIL <br> (unable to find valid IP addresses) | Disable DNS over HTTPS Functionality <br> continue to use standard DNS |
-
-<br>Therefore to continue using Pi-hole to block internet garbage, pi-hole *must* return NXDOMAIN or SERVFAIL when queried for [use-application-dns.net](https://use-application-dns.net/). 
+|         Standard DNS Return         |          Browser Action              |
+|:-----------------------------------:|:------------------------------------:|
+| A or AAAA records                   | Enable DNS over HTTPS Functionality  |
+| (valid IP addresses)                | (bypassing standard DNS)             |
+|:-----------------------------------:|:------------------------------------:|
+| NXDOMAIN or SERVFAIL                | Disable DNS over HTTPS Functionality |
+| (unable to find valid IP addresses) | (continue to use standard DNS)       |
+|:-----------------------------------:|:------------------------------------:|
+|                                     |                                      |
+{: rules="groups"}
+Therefore to continue using Pi-hole to block internet garbage, pi-hole *must* return NXDOMAIN or SERVFAIL when queried for [use-application-dns.net](https://use-application-dns.net/). 
 
 What's more is that those top, top Pi-hole developers have already merged a fix to [make this happen](https://github.com/pi-hole/pi-hole/pull/2915). Further discussion on this change is available on a pi-hole [discourse thread](https://discourse.pi-hole.net/t/support-for-returning-nxdomain-for-use-application-dns-net-to-disable-firefox-doh/23243/7).
 
