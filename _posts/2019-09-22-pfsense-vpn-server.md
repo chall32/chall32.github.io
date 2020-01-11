@@ -190,7 +190,7 @@ Phew! :sweat_smile: That'll finish it for the pfSense OpenVPN server configurati
 
 In this article we looked at why a VPN is a good idea and what could happen if you don't run a VPN.  From there we looked at configuring an OpenVPN server on pfSense. Not only that, we secured our OpenVPN server with two factor authentication using both certificates and passwords.
 
-Next time, we will look at client configuration and testing.
+Next time, we will look at [client configuration and testing](https://polarclouds.co.uk/pfsense-vpn-client/)
 
 Until then, keep it secure! :sunglasses:
 
