@@ -5,7 +5,7 @@ title: Monitor Your ADSL / VDSL Connection Statistics via Twitter
 date: '2015-04-13T20:44:00.000+01:00'
 tags:
 - Development
-- Andriod
+- Android
 - ADSL
 image:
   thumb: monitor-your-adsl-vdsl-connection/HG612Tweet.png
