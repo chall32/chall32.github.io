@@ -5,6 +5,8 @@ excerpt: "Be gone CPU_SUPPORT Error!"
 tags: 
 - Free
 - Pro-Tip
+- VMware
+- ESXi
 image:
   thumb: workaround-esxi-cpu-unsupported/workaround-esxi-cpu-unsupported-00.png
 comments: true
