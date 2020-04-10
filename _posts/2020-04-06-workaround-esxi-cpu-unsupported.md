@@ -23,6 +23,10 @@ The new v7.0 version of vSphere was released late last week and like many others
 
 First step is to install ESXi 7.0 into a Virtual Machine (VM) and have a little look see before we go any further. 
 
+This post is part 1 of a multipart series.  Find the other parts here:
+-  Part 1: This part (Be gone CPU_SUPPORT Error!)
+-  Part 2: [CPUID and EAX Between Friends](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported-pt2/)
+-  Part 3: *Yet to come. Stay tuned..!* 
 
 ## Problem 1 - Boot Drive Size
 Being the same old, same old frugal VM admin, I assigned my usual 1GB boot drive hard disk to my ESXi 7.0 VM.  Boot up answer the first couple of installer questions... Hmmm this is new: 
@@ -62,7 +66,7 @@ Power off the ESXi 7.0 VM, edit the settings, expand the CPU settings and click 
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="CPU Advanced Settings" src="/images/workaround-esxi-cpu-unsupported/workaround-esxi-cpu-unsupported-03.png">
 
-From there expand **Level 1** and paste the following into the **eax** field:
+From there expand **Level 1** and paste the following into the **EAX** field:
 
 Identification for Intel CPUs: `0000:0000:0000:0011:0000:0110:1100:0011` <br>
 Identification for AMD CPUs: `0000:0000:0110:0000:0000:1111:0001:0000`
@@ -92,6 +96,6 @@ From there expand **Level 1**, click **Reset Row** and click **OK** twice to sav
 
 Job done. ESXi7 installed, CPU ID returned to normal.
 
-Next time in part 2, we'll take a closer look at eax numbers and I'll detail how I arrived at the working eax numbers.
+Next time in [part 2](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported-pt2/), we'll take a closer look at EAX numbers and I'll detail how I arrived at the working EAX numbers.
 
 -Chris 
