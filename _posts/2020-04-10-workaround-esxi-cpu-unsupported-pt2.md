@@ -19,7 +19,7 @@ As mentioned, this post is part 2 of a multipart series.  Find the other parts h
 
 -  Part 1: [Be gone CPU_SUPPORT Error!](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported/)
 -  Part 2: This part (CPUID and EAX Between Friends)
--  Part 3: *Yet to come. Stay tuned..!* 
+-  Part 3: [Lets Get Virtual to Physical](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported-pt3/)
 
 To recap, the ESXi installer uses the CPUID instruction to identify the CPU(s) installed in the system. From the value obtained the user is told that their processor is either:
 -  **Unsupported**. At which point the installer quits. No ESXi 7.0 for you!

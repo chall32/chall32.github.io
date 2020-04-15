@@ -26,7 +26,7 @@ First step is to install ESXi 7.0 into a Virtual Machine (VM) and have a little 
 This post is part 1 of a multipart series.  Find the other parts here:
 -  Part 1: This part (Be gone CPU_SUPPORT Error!)
 -  Part 2: [CPUID and EAX Between Friends](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported-pt2/)
--  Part 3: *Yet to come. Stay tuned..!* 
+-  Part 3: [Lets Get Virtual to Physical](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported-pt3/)
 
 ## Problem 1 - Boot Drive Size
 Being the same old, same old frugal VM admin, I assigned my usual 1GB boot drive hard disk to my ESXi 7.0 VM.  Boot up answer the first couple of installer questions... Hmmm this is new: 
