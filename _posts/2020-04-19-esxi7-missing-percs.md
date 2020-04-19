@@ -68,7 +68,7 @@ Checking the VCG with the first five above, straight away I noticed something:
  
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Native and vmlinx" src="/images/esxi7-missing-percs/esxi7-missing-percs-04.png">
  
-Hmmm, so back in the ESXi 5.5 days, LSI 2108 based cards used the native lsi_mr3 driver...!?! Check out the above VGC entry for the LSI MegaRAID SAS 9260-8i for yourself [HERE](https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=io&productid=12384)
+Hmmm, so back in the ESXi 5.5 days, LSI 2108 based cards used the native lsi_mr3 driver...!?! Check out the above VCG entry for the LSI MegaRAID SAS 9260-8i for yourself [HERE](https://www.vmware.com/resources/compatibility/detail.php?deviceCategory=io&productid=12384)
 
 Wait, when did the VMKlinux Driver Stack Deprecation start? [ESXi5.5!](https://www.virtuallyghetto.com/2013/10/esxi-55-introduces-new-native-device.html)
 
@@ -86,7 +86,7 @@ SubDevice ID (SDID) = 1f18 (Dell PERC H700 Modular)<br>
 
 After lots and lots of reading, a bit more reading and a bit of testing in a VM, it looks like VMware drivers potentially reference PCI hardware IDs located in two files for each driver present in the O/S.  These files are `driver.map` and `driver.ids`.
 
-What happens if we add the PCI ID of the Dell H700 to the list of IDs supported by the lsi_mr3 driver?  After all, if the VGC is anything to go by, the lsi_mr3 driver *used* to support LSI 2108 based cards...
+What happens if we add the PCI ID of the Dell H700 to the list of IDs supported by the lsi_mr3 driver?  After all, if the VCG is anything to go by, the lsi_mr3 driver *used* to support LSI 2108 based cards...
 
 So using my ESXi 7 VM [created earlier](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported-pt3/#create-a-vm-for-esxi-installation-on-usb), lets have a play. As ESXi runs from memory, we need to extract lsi_mr3.v00, make the required modifications and repackage the modified files back into lsi_mr3.v00. Finally reboot to load the modified driver. Follows is the process to extract, modify and repackage the lsi_mr3.v00 driver.
 
