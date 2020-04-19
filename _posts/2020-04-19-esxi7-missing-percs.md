@@ -86,7 +86,7 @@ SubDevice ID (SDID) = 1f18 (Dell PERC H700 Modular)<br>
 
 After lots and lots of reading, a bit more reading and a bit of testing in a VM, it looks like VMware drivers potentially reference PCI hardware IDs located in two files for each driver present in the O/S.  These files are `driver.map` and `driver.ids`.
 
-What happens if we add the PCI ID of the Dell H700 to the list of IDs supported by the lsi_mr3 driver?  After all, if the VGC is anything to go by, the lsi_mr3 driver *used* to support LSI 2008 based cards...
+What happens if we add the PCI ID of the Dell H700 to the list of IDs supported by the lsi_mr3 driver?  After all, if the VGC is anything to go by, the lsi_mr3 driver *used* to support LSI 2108 based cards...
 
 So using my ESXi 7 VM [created earlier](https://polarclouds.co.uk/workaround-esxi-cpu-unsupported-pt3/#create-a-vm-for-esxi-installation-on-usb), lets have a play. As ESXi runs from memory, we need to extract lsi_mr3.v00, make the required modifications and repackage the modified files back into lsi_mr3.v00. Finally reboot to load the modified driver. Follows is the process to extract, modify and repackage the lsi_mr3.v00 driver.
 
