@@ -22,3 +22,4 @@ To those in the know, a polar cloud is actually a fast moving, constantly changi
 
 _**Polar clouds** – constantly changing, constantly adapting, constantly looking beautiful, constantly at peace with their environment…_
 
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="VMware vExpert 2020" src="/images/pages/vexpert2020.png">
