@@ -15,6 +15,12 @@ date: 2020-07-31T00:00:00+00:00
 Whilst the newer version of VMware NSX, NSX-T is gaining some traction in the wider community of late, it has yet to reach the level of business adoption that NSX Data Center (formally/affectionately known as NSX-v) has. There are still many, many organisations running NSX Data Center.
 
 With that in mind, I wanted to post a series of articles performing a site failover and recovery of my NSX Data Center test lab.
+
+This post is part 1 of a multipart series.  Find the other parts here:
+
+-  Part 1: This part - Why and Getting Familiar
+-  Part 2: [Bye-bye Site A!](https://polarclouds.co.uk/nsx-data-center-failover-pt2/)
+
 {% include _toc.html %}
 ## Why?
 As can be seen below, an NSX Data Center installation requires several components to operate:
@@ -53,17 +59,17 @@ We will be performing failover in the following lab:
 - Site A is the primary site
 - Site B is the secondary site
 - Site A houses NSX controller cluster and the UDLR control VMs
-- "UNIVERSAL-SITE-A" and "UNIVERSAL_SITE_B" represent the universal layer 2 LANs spanning both A and B sites
+- "UNIVERSAL-SITE-A" and "UNIVERSAL-SITE-B" represent the universal layer 2 VXLANs spanning both A and B sites
 - VMs plugged in to "UNIVERSAL-SITE-A" use ESG-SITE-A as their preferred north/south egress/ingress point
 - VMs plugged in to "UNIVERSAL-SITE-B" use ESG-SITE-B as their preferred north/south egress/ingress point
-- BGP peering is used between UDLRs, Edges and LABROUTER (a pfSense router) for dynamic routing
+- BGP peering is used between UDLRs, ESGs and LABROUTER (a pfSense router) for dynamic routing
 
 ## Failover Prerequisites
 The following should ideally be configured / captured prior to a failover event:
 - Ensure that [Controller Disconnected Operation (CDO) mode](https://docs.vmware.com/en/VMware-NSX-Data-Center-for-vSphere/6.4/com.vmware.nsx.admin.doc/GUID-9302DCCA-12E9-409D-858E-110A91639A69.html) is enabled on all NSX Managers in the environment
 - Setup an IP Pool for the NSX Controllers on the secondary site
 - UDLR configuration captured - including interfaces, ECMP status, static routes (if any) and BGP config
-- Admin credentials for all ESGs, UDLRs, NSX Managers and vCenters at both sites
+- Admin credentials for all ESGs, UDLR control VMs, NSX Managers and vCenters at both sites
 
 ## Component Placement After a Failover
 <a target="_blank" href="/images/nsx-data-center-failover-pt1/nsx-data-center-failover-02.png"><img style="display:block;" src="/images/nsx-data-center-failover-pt1/nsx-data-center-failover-02.png" alt="Site A Failed"/></a><sup>(Click image to zoom in)</sup><br>
@@ -72,12 +78,17 @@ Following a failover of Site A to Site B, the following can be observed:
 - Universal Site A UDLR control VM is rebuilt on Site B
 - Universal Site B UDLR control VM is rebuilt on Site B
 
-Additionally, Site B NSX Manager promoted to primary.
+Additionally, Site B NSX Manager promoted to primary. The rebuilt VMs are shown in red at Site B in the above diagram.
 
-## Conclusion and Wrap up
+## Conclusion and Wrap Up
 That'll do it for part one.
 
 In this part we looked at failure scenarios, became familiar with our NSX test lab. We also looked at prerequisites to enable a smooth failover. Over the next couple of posts we will get into performing a primary site failover along with a failback once our failed site returns. 
+
+This was part 1 of a multipart series.  Find the other parts here:
+
+-  Part 1: This part - Why and Getting Familiar
+-  Part 2: [Bye-bye Site A!](https://polarclouds.co.uk/nsx-data-center-failover-pt2/)
 
 Look out for future parts coming soon!
 
