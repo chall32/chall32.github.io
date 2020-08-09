@@ -20,6 +20,7 @@ This post is part 1 of a multipart series.  Find the other parts here:
 
 -  Part 1: This part - Why and Getting Familiar
 -  Part 2: [Bye-bye Site A!](https://polarclouds.co.uk/nsx-data-center-failover-pt2/)
+-  Part 3: [Site A Back from the Dead!](https://polarclouds.co.uk/nsx-data-center-failover-pt3/)
 
 {% include _toc.html %}
 ## Why?
