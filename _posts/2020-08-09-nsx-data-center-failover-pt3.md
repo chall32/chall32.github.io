@@ -18,6 +18,7 @@ As mentioned, this post is part 3 of a multipart series.  Find the other parts h
 -  Part 1: [Why and Getting Familiar](https://polarclouds.co.uk/nsx-data-center-failover-pt1/)
 -  Part 2: [Bye-bye Site A!](https://polarclouds.co.uk/nsx-data-center-failover-pt2/)
 -  Part 3: This part - Site A Back from the Dead!
+-  Part 4: [Making Site A Primary Again](https://polarclouds.co.uk/nsx-data-center-failover-pt4/)
 
 To recap, the NSX Data Center control plane components (consisting of the NSX Controller cluster and the Universal Logical Distributed Router (UDLR) control VMs) can only exist on one site; the primary site. In the event of loss of the primary site the control VMs must be recreated at a secondary site to reinstate the NSX control plane. When we lost the primary site, we recreated them at secondary site to reinstate the NSX control plane.
 {% include _toc.html %}
@@ -167,6 +168,8 @@ This was part 3 of a multipart series.  Find the other parts here:
 -  Part 1: [Why and Getting Familiar](https://polarclouds.co.uk/nsx-data-center-failover-pt1/)
 -  Part 2: [Bye-bye Site A!](https://polarclouds.co.uk/nsx-data-center-failover-pt2/)
 -  Part 3: This part - Site A Back from the Dead!
+-  Part 4: [Making Site A Primary Again](https://polarclouds.co.uk/nsx-data-center-failover-pt4/)
+
 
 Next time, in part 4, we'll look at promoting Site A back to primary status again.
 
