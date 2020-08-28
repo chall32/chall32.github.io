@@ -92,7 +92,7 @@ In this post we paired our sites, configured vSphere replication and got our VM(
 
 Next time we'll try to recover a replicated VM from a disaster... :dizzy_face: :astonished:
 
-This was part 2 of a multipart series. If you missed part 1, [catch up now](https://polarclouds.co.uk/buget-vm-recovery-pt1/)!
+This was part 2 of a multipart series. If you missed part 1, [catch up now](https://polarclouds.co.uk/budget-vm-recovery-pt1/)!
 
 -Chris
 
