@@ -11,7 +11,7 @@ comments: true
 date: 2020-08-28T00:00:00+00:00
 ---
 <img style="float: right; margin: 0px 0px 10px 10px;" alt="VM Recovery" src="/images/budget-vm-recovery-pt1/budget-vm-recovery-00.png">
-Last time we deployed and configured our vSphere replication appliances, [catch up now](https://polarclouds.co.uk/buget-vm-recovery-pt1/). It's a great read. :wink:
+Last time we deployed and configured our vSphere replication appliances, [catch up now](https://polarclouds.co.uk/budget-vm-recovery-pt1/). It's a great read. :wink:
 
 This time we will configure our vSphere replication appliances and kick off some replications.
 
