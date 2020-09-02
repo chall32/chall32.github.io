@@ -174,6 +174,10 @@ In this post we had a quick introduction into vSphere Replication. Additionally,
 
 Finally we'll try to recover from a disaster... :dizzy_face: :astonished:
 
-Part 2 is available here: [Site Pairing and Replication Configuration](https://polarclouds.co.uk/budget-vm-recovery-pt2/)
+This was part 1 of a multipart series.  Find the other parts here:
+
+- Part 1: This part - No money, no problem: Introduction and Deployment
+- Part 2: [Site Pairing and Replication Configuration](https://polarclouds.co.uk/budget-vm-recovery-pt2/)
+- Part 3: [Disaster Strikes!](https://polarclouds.co.uk/budget-vm-recovery-pt3/)
 
 -Chris
