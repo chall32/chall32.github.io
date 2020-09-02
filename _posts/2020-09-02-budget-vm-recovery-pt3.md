@@ -21,7 +21,7 @@ This time we will look at how to recover from a disaster using our replicated VM
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Part 3 - 1" src="/images/budget-vm-recovery-pt3/budget-vm-recovery3-01.png">
 
 ## Oooops, I broke It!
-Let's ~~internationally~~ accidently cause a disaster by breaking our replicated VM.  Shall we uninstall the storage controller driver? Yes, let's:
+Let's ~~intentionally~~ accidently cause a disaster by breaking our replicated VM.  Shall we uninstall the storage controller driver? Yes, let's:
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Part 3 - 2" src="/images/budget-vm-recovery-pt3/budget-vm-recovery3-02.png">
 
