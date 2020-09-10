@@ -17,6 +17,8 @@ Regular readers will know that at in part 3 of the Workaround ESXi CPU Unsupport
 
 My Dell PERC H700 RAID controller had gone AWOL under ESXi 7.0.
 
+***Update: Since writing this post things have moved on.** Checkout [this post](https://polarclouds.co.uk/esxi7-missing-percs-pt2/) for the new developments!*
+
 In this post, I'll try to address that. First off the standard disclaimer applies:
 
 -  Proceed at your own risk
@@ -173,5 +175,7 @@ Whilst we are all in isolation thanks to COVID-19, what's the harm in trying rig
 Hopefully I can test soon.<br> 
 
 In the meantime, if you fancy having a go at the above on your LSI 2108 based adapter, please be my guest. Just remember to use the PCIDs that match your hardware! :wink:
+
+***Update: Since writing this post things have moved on.** Checkout [this post](https://polarclouds.co.uk/esxi7-missing-percs-pt2/) for the new developments!*
 
 -Chris
