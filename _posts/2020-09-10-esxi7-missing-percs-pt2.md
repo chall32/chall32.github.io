@@ -148,7 +148,7 @@ Finally, checking via Dell OpenManage, looks like the array controller is re-ini
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Power On 11" src="/images/esxi7-missing-percs-pt2/esxi7-missing-percs2-14.png">
 
-Lets leave bring all of the VMs back online and leave the background initialisation to continue in the er, background. :grin:
+Lets bring all of the VMs back online and leave the background initialisation to continue in the er, background. :grin:
 
 All in all, it took just under 12 hours to finish the background initialisation of both RAID5 sets.
 
