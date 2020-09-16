@@ -101,6 +101,10 @@ Our VMFS partition starts at sector 268437504.
 
 Next, let's find the end usable sector on the disk:
 
+{% highlight text %}
+partedUtil getUsableSectors "/vmfs/devices/disks/DeviceName"
+{% endhighlight %}
+
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Get Usable Sectors" src="/images/failed-to-expand-vmfs-datastore/failed-to-expand-11.png">
 
 As we can see from the above screenshot, the second number returned is the last usable sector on the disk:
