@@ -62,7 +62,7 @@ Oh look an error:
 Doh!
 
 ## [Solved] How to Expand the Datastore
-So if we can't expand a boot drive datastore through the host web client, we are going to have to drop to the command line achieve the expansion.
+So if we can't expand a boot drive datastore through the host web client, we are going to have to drop to the command line to achieve the expansion.
 
 :warning: ***Standard disclaimers apply!  Proceed at your own risk. Follows is for information only.  YOU CONTROL YOUR DATA! Back it up first perhaps?*** :warning:	
 
@@ -74,13 +74,21 @@ First, we need some information regarding the disks upon which the partitions ar
 
 Next, lets fire up an SSH session or use the [DCUI](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.security.doc/GUID-94F0C54F-05E3-4E16-8027-0280B9ED1009.html) doesn't matter which.
 
-Next, lets use the information gained above to get some further info on the partition table:
+Lets use the information gained above to get some further info on the partition table:
+
+{% highlight text %}
+partedUtil getptbl "/vmfs/devices/disks/DeviceName"
+{% endhighlight %}
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Get Partition Table" src="/images/failed-to-expand-vmfs-datastore/failed-to-expand-09.png">
 
 Yep, <code>8 268437504 419430366 AA31E02A400F11DB9590000C2911D1B8 vmfs 0</code> is the VMFS partition we want to work on.
 
 Next, lets confirm that the partition structure is OK before we make any changes:
+
+{% highlight text %}
+partedUtil fixGpt "/vmfs/devices/disks/DeviceName"
+{% endhighlight %}
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Fix Partition Table" src="/images/failed-to-expand-vmfs-datastore/failed-to-expand-10.png">
 
