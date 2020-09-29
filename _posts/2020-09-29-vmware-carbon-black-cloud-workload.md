@@ -35,7 +35,7 @@ This is where vMware Carbon Black Cloud Workload comes in.
 
 {% include _toc.html %}
 ## What is VMware Carbon Black Cloud Workload?
-VMware Carbon Black Cloud Workload address modern day security challenges in the following ways:
+VMware Carbon Black Cloud Workload addresses modern day security challenges in the following ways:
 
 - Integrates with existing vSphere infrastructure
 - Easy deployment and lifecycle management
