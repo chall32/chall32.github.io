@@ -119,7 +119,7 @@ Extract the ESXi ISO image to a folder under the **C:\RemoteInstall\Boot** folde
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="ESXi Copied" src="/images/esxi-wds-uefi/esxi-wds-uefi-05.png">
 
-Next, copy the file **C:\RemoteInstall\Boot\ESXi-7.0.1\EFI\BOOT\BOOTX64.EFI** to **C:\RemoteInstall\Boot\ESXi-7.0.1** and rename the file to **moboot.efi**:
+Next, copy the file **C:\RemoteInstall\Boot\ESXi-7.0.1\EFI\BOOT\BOOTX64.EFI** to **C:\RemoteInstall\Boot\ESXi-7.0.1** and rename the file to **mboot.efi**:
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="mboot.efi" src="/images/esxi-wds-uefi/esxi-wds-uefi-06.png">
 
