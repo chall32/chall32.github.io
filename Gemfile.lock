@@ -71,7 +71,7 @@ GEM
       octopress-deploy
       octopress-escape-code (~> 2.0)
       octopress-hooks (~> 2.0)
-      redcarpet (~> 3.0)
+      redcarpet (~> 3.5.1)
       titlecase
     octopress-deploy (1.3.0)
       colorator
