@@ -4,7 +4,7 @@ title: "Send Telegram Messages from PowerShell"
 excerpt: "Scripted Notification"
 tags: 
 - Free
-- ProTip
+- Pro-Tip
 - Windows
 image:
   thumb: send-telegram-from-powershell/telegram-from-powershell-00.png
