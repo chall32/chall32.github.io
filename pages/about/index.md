@@ -24,3 +24,4 @@ _**Polar clouds** – constantly changing, constantly adapting, constantly looki
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="VMware vExpert 2020" src="/images/pages/vexpert2020.png">
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="VMware vExpert 2021" src="/images/pages/vexpert2021.png">
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="VMware vExpert 2022" src="/images/pages/vexpert2022.png">
