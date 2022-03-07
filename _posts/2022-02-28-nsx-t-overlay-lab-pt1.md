@@ -23,7 +23,7 @@ In this series of posts, we'll be looking at deploying NSX-T 3.2 into a lab envi
 This post is part 1 of a multipart series.  Find the other parts here:
 
 - Part 1: This part - Lab Setup and Overview
-- Part 2: *Coming soon!* 
+- Part 2: [Site A Build](/nsx-t-overlay-lab-pt2/){:target="_blank"}
 
 Right then, lets get on with part 1 of the series and take a look at the lab setup. 
 {% include _toc.html %}
@@ -179,6 +179,11 @@ All lab portgroups set with the following security with VLAN trunking enabled:
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Lab Networking Config" src="/images/nsx-t-overlay-lab-pt1/nsx-t-overlay-lab-pt1-11.png">
 
+MTU is set to 9000:
+
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="Lab Networking Config - MTU" src="/images/nsx-t-overlay-lab-pt1/nsx-t-overlay-lab-pt1-12.png">
+
+
 ## Lab vCenter Configuration
 Lets look at the vCenter configuration. Clusters view; Nothing complicated, two linked vCenters, two hosts and a test APP VM per site:
 
@@ -202,7 +207,7 @@ That'll just about do it for the first post of the series. Sure, on it's own thi
 This was part 1 of a multipart series. Find the other parts here:
 
 - Part 1: This part - Lab Setup and Overview
-- Part 2: *Coming soon!*
+- Part 2: [Site A Build](/nsx-t-overlay-lab-pt2/){:target="_blank"}
 
 Look out for future parts coming soon!
 
