@@ -22,7 +22,7 @@ This post is part 2 of a multipart series.  Find the other parts here:
 
 - Part 1: [Lab Setup and Overview](/nsx-t-overlay-lab-pt1/){:target="_blank"}
 - Part 2: This Part: Site A Build
-- Part 3: *Coming soon!* 
+- Part 3: [Automated Site B Build](/nsx-t-overlay-lab-pt3/){:target="_blank"}
 
 As a reminder, in this series we will be building the following lab:
 
@@ -266,6 +266,7 @@ This was part 2 of a multipart series. Find the other parts here:
 
 - Part 1: [Lab Setup and Overview](/nsx-t-overlay-lab-pt1/){:target="_blank"}
 - Part 2: This Part: Site A build
+- Part 3: [Automated Site B Build](/nsx-t-overlay-lab-pt3/){:target="_blank"}
 
 Look out for future parts coming soon!
 
