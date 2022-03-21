@@ -25,6 +25,7 @@ This post is part 1 of a multipart series.  Find the other parts here:
 - Part 1: This part - Lab Setup and Overview
 - Part 2: [Site A Build](/nsx-t-overlay-lab-pt2/){:target="_blank"}
 - Part 3: [Automated Site B Build](/nsx-t-overlay-lab-pt3/){:target="_blank"}
+- Part 4: [Multi Site Federation](/nsx-t-overlay-lab-pt4/){:target="_blank"}
 
 Right then, lets get on with part 1 of the series and take a look at the lab setup. 
 {% include _toc.html %}
@@ -210,6 +211,7 @@ This was part 1 of a multipart series. Find the other parts here:
 - Part 1: This part - Lab Setup and Overview
 - Part 2: [Site A Build](/nsx-t-overlay-lab-pt2/){:target="_blank"}
 - Part 3: [Automated Site B Build](/nsx-t-overlay-lab-pt3/){:target="_blank"}
+- Part 4: [Multi Site Federation](/nsx-t-overlay-lab-pt4/){:target="_blank"}
 
 Look out for future parts coming soon!
 
