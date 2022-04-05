@@ -23,13 +23,14 @@ This post is part 5 of a multipart series.  Find the other parts here:
 - Part 3: [Automated Site B Build](/nsx-t-overlay-lab-pt3/){:target="_blank"}
 - Part 4: [NSX-T Site Federation](/nsx-t-overlay-lab-pt4/){:target="_blank"}
 - Part 5: This Part: Remote Tunnel Endpoints
+- Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt6/){:target="_blank"}
 
 As a reminder, in this series we will be building the following lab:
 
 <a href="/images/nsx-t-overlay-lab-pt1/nsx-t-overlay-lab-pt1-02.png"><img style="display:block;" src="/images/nsx-t-overlay-lab-pt1/nsx-t-overlay-lab-pt1-02.png" alt="NSX-T Test Lab"/></a><sup>(Click image to zoom in)</sup>
 
 {% include _toc.html %} <br>
-## What is an Remote Tunnel End Point or RTEP? 
+## What is a Remote Tunnel End Point or RTEP? 
 Just like the host and edge TEPs, NSX-T Geneve traffic needs to be encapsulated and de-encapsulated by a Tunnel End Point (TEP). RTEPs are used for cross site traffic from Edge node to Edge node. If we want to pass encapsulated overlay traffic from one site to another site, we are going to need some RTEPs.
 
 OK, so let's get some RTEPs configured!
@@ -113,6 +114,7 @@ This was part 5 of a multipart series. Find the other parts here:
 - Part 3: [Automated Site B Build](/nsx-t-overlay-lab-pt3/){:target="_blank"}
 - Part 4: [NSX-T Site Federation](/nsx-t-overlay-lab-pt4/){:target="_blank"}
 - Part 5: This Part: Remote Tunnel Endpoints
+- Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt6/){:target="_blank"}
 
 Look out for future parts coming soon!
 
