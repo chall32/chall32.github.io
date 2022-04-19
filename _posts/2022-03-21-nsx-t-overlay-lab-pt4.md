@@ -24,6 +24,7 @@ This post is part 4 of a multipart series.  Find the other parts here:
 - Part 4: This Part: Multi Site Federation
 - Part 5: [Remote Tunnel Endpoints](/nsx-t-overlay-lab-pt5/){:target="_blank"}
 - Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt6/){:target="_blank"}
+- Part 7: [Federated Tier-1 Gateways](/nsx-t-overlay-lab-pt7/){:target="_blank"}
 
 As a reminder, in this series we will be building the following lab:
 
@@ -113,5 +114,6 @@ This was post part 4 of a multipart series.  Find the other parts here:
 - Part 4: This Part: Multi Site Federation
 - Part 5: [Remote Tunnel Endpoints](/nsx-t-overlay-lab-pt5/){:target="_blank"}
 - Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt6/){:target="_blank"}
+- Part 7: [Federated Tier-1 Gateways](/nsx-t-overlay-lab-pt7/){:target="_blank"}
 
 -Chris
