@@ -25,6 +25,7 @@ This post is part 7 of a multipart series.  Find the other parts here:
 - Part 5: [Remote Tunnel Endpoints](/nsx-t-overlay-lab-pt5/){:target="_blank"}
 - Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt6/){:target="_blank"}
 - Part 7: This Part: Federated Tier-1 Gateways
+- Part 8: [Egress Traffic and MEDdling with BGP](/nsx-t-overlay-lab-pt8/){:target="_blank"}
 
 
 As a reminder, in this series we will be building the following lab:
@@ -167,6 +168,7 @@ This was part 7 of a multipart series. Find the other parts here:
 - Part 5: [Remote Tunnel Endpoints](/nsx-t-overlay-lab-pt5/){:target="_blank"}
 - Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt5/){:target="_blank"}
 - Part 7: This Part: Federated Tier-1 Gateways
+- Part 8: [Egress Traffic and MEDdling with BGP](/nsx-t-overlay-lab-pt8/){:target="_blank"}
 
 Will there be a part 8?
 

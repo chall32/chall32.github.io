@@ -29,6 +29,7 @@ This post is part 1 of a multipart series.  Find the other parts here:
 - Part 5: [Remote Tunnel Endpoints](/nsx-t-overlay-lab-pt5/){:target="_blank"}
 - Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt6/){:target="_blank"}
 - Part 7: [Federated Tier-1 Gateways](/nsx-t-overlay-lab-pt7/){:target="_blank"}
+- Part 8: [Egress Traffic and MEDdling with BGP](/nsx-t-overlay-lab-pt8/){:target="_blank"}
 
 Right then, lets get on with part 1 of the series and take a look at the lab setup. 
 {% include _toc.html %}
@@ -218,6 +219,7 @@ This was part 1 of a multipart series. Find the other parts here:
 - Part 5: [Remote Tunnel Endpoints](/nsx-t-overlay-lab-pt5/){:target="_blank"}
 - Part 6: [Federated Tier-0 Gateway](/nsx-t-overlay-lab-pt6/){:target="_blank"}
 - Part 7: [Federated Tier-1 Gateways](/nsx-t-overlay-lab-pt7/){:target="_blank"}
+- Part 8: [Egress Traffic and MEDdling with BGP](/nsx-t-overlay-lab-pt8/){:target="_blank"}
 
 Look out for future parts coming soon!
 
