@@ -20,8 +20,30 @@ To the layperson, a polar cloud looks beautiful just hanging there stationary in
 
 To those in the know, a polar cloud is actually a fast moving, constantly changing mass of tiny moving parts coming together to make something cohesive.
 
-_**Polar clouds** – constantly changing, constantly adapting, constantly looking beautiful, constantly at peace with their environment…_
+_**Polar Clouds** – constantly changing, constantly adapting, constantly looking beautiful, constantly at peace with their environment…_
+<table>
+<tr>
+<td style="height:50%;  width:50%;">
+<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2022" src="/images/pages/vexpert2022.png"></a>
+</td>
+<td style="height:50%;  width:50%;">
+</td>
+</tr>
+<tr>
+<td style="height:50%;  width:50%;">
+<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2021" src="/images/pages/vexpert2021.png"></a>
+</td>
+<td style="height:50%;  width:50%;">
+<a target="_blank" href="https://www.credly.com/badges/b9197d7b-a0ca-4c53-94da-63b1618ab941/public_url"><img alt="VMware IT Academy Network Virtualisation Concepts" src="/images/pages/it-academy-nvc.png"></a>
+</td>
+</tr>
+<tr>
+<td style="height:50%;  width:50%;">
+<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2020" src="/images/pages/vexpert2020.png"></a>
+</td>
+<td style="height:50%;  width:50%;">
+</td>
+</tr>
+</table>
 
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="VMware vExpert 2020" src="/images/pages/vexpert2020.png">
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="VMware vExpert 2021" src="/images/pages/vexpert2021.png">
-<img style="display: block; margin-left: auto; margin-right: auto;" alt="VMware vExpert 2022" src="/images/pages/vexpert2022.png">
+
