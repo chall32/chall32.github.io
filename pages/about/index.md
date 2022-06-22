@@ -27,6 +27,7 @@ _**Polar Clouds** – constantly changing, constantly adapting, constantly looki
 <a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2022" src="/images/pages/vexpert2022.png"></a>
 </td>
 <td style="height:50%;  width:50%;">
+<a target="_blank" href="https://www.credly.com/badges/5a8718f7-d27f-434a-b91f-d81f62022045/public_url"><img alt="Rubrik Technical Professional" src="/images/pages/rubrik-technical-professional.png"></a>
 </td>
 </tr>
 <tr>
@@ -42,6 +43,7 @@ _**Polar Clouds** – constantly changing, constantly adapting, constantly looki
 <a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2020" src="/images/pages/vexpert2020.png"></a>
 </td>
 <td style="height:50%;  width:50%;">
+<a target="_blank" href="https://www.credly.com/badges/83bbadbe-dbe6-4d3d-90c2-6a553e0bfae3/public_url"><img alt="VMware IT Academy Software Defined Storage Concepts" src="/images/pages/it-academy-sdc.png"></a>
 </td>
 </tr>
 </table>
