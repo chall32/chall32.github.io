@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vSphere Compliance with vRealise Operations and Tagging" 
+title: "vSphere Compliance with vRealize Operations and Tagging" 
 excerpt: "Creating Continual Regulatory Compliance"
 tags: 
 - Pro-Tip
@@ -27,7 +27,7 @@ For example, two popular hardening benchmarks are CIS and DISA STIG. These are a
 - DISA STIG Benchmarks: [Here](https://public.cyber.mil/stigs/downloads/){:target="_blank"}
 {% include _toc.html %}
 ## Objectives
-Whilst vRealise Operations (vRO) can be integrated into VMware Cloud on AWS, Azure VMware Solution, Google Cloud VMware Engine as well as native Azure and AWS environments, in this post we shall address the hardening of a Software Defined Data Center on premises vSphere environment.
+Whilst vRealize Operations (vRO) can be integrated into VMware Cloud on AWS, Azure VMware Solution, Google Cloud VMware Engine as well as native Azure and AWS environments, in this post we shall address the hardening of a Software Defined Data Center on premises vSphere environment.
 
 In so doing, we shall be system hardening the following components that make up a vSphere environment:
 
@@ -41,7 +41,7 @@ In so doing, we shall be system hardening the following components that make up 
 
 We will **NOT** be system hardening the guest operating systems running inside the virtual machines. These operating systems have their own system hardening standards / benchmarks so are therefore outside the scope of this article.
 
-## What is vRealise Operations?
+## What is vRealize Operations?
 From the VMware [marketing blurb](https://www.vmware.com/uk/products/vrealize-operations.html){:target="_blank"}:<br>
 VMware vRealize Operations provides self-driving IT Operations Management across private, hybrid and multi-cloud environments with a unified operations platform that delivers continuous performance, capacity and cost optimization, intelligent remediation and integrated compliance through AI/ML and predictive analytics.
 
@@ -110,8 +110,8 @@ To confirm which objects have the tag applied and which do not, simply search fo
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="List Objects with Tag" src="/images/vsphere-compliance-with-vro/vsphere-compliance-with-vro-10.png">
 
 This list can be then be exported and provided to my security/compliance department as proof of those objects NOT in compliance with the hardening applied across the rest of the environment. 
-## vRealise Operations Configuration
-I won't cover the deployment of the vRealise Operations appliance here. Should you need further info, see [Deployment of vRealize Operations](https://docs.vmware.com/en/vRealize-Operations/8.6/com.vmware.vcom.vapp.doc/GUID-49349FD7-7237-4022-A6A5-1B26D7AFC7DF.html){:target="_blank"} and the [vRealise Operations Sizing Tool](https://vropssizer.vmware.com/){:target="_blank"}.
+## vRealize Operations Configuration
+I won't cover the deployment of the vRealize Operations appliance here. Should you need further info, see [Deployment of vRealize Operations](https://docs.vmware.com/en/vRealize-Operations/8.6/com.vmware.vcom.vapp.doc/GUID-49349FD7-7237-4022-A6A5-1B26D7AFC7DF.html){:target="_blank"} and the [vRealize Operations Sizing Tool](https://vropssizer.vmware.com/){:target="_blank"}.
 
 To integrate vRO with vCenter, logon to vRO with the admin account, select **Data Sources > Integrations > Add Account > vCenter** and add your vCenter details.  
 
@@ -121,7 +121,7 @@ Once vCenter has been integrated, you should see the following:
 
 ### Activating Compliance Standard to Apply to vSphere
 Next we need to select a compliance standard baseline to which we require our environment to conform to. 
-From the vRealise Operations console, select **Optimise > Compliance**.  As you can see from below, there are several built in Regulatory Standards / Benchmarks available to choose from. These include:
+From the vRealize Operations console, select **Optimise > Compliance**.  As you can see from below, there are several built in Regulatory Standards / Benchmarks available to choose from. These include:
 
 - CIS Security Standards
 - DISA Security Standards
@@ -296,7 +296,7 @@ Once complete the initial assessment should begin:
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Initial Assessment Running" src="/images/vsphere-compliance-with-vro/vsphere-compliance-with-vro-34.png">
 
-## vRealise Operations vSphere CIS Compliance Results
+## vRealize Operations vSphere CIS Compliance Results
 So after all that configuration, let's see where we need to harden our vSphere environment. From the vRO console, select **Optimise > Compliance > Custom Benchmark** - in my case **PolarClouds CIS Compliance**:
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="PolarClouds Initial Compliance" src="/images/vsphere-compliance-with-vro/vsphere-compliance-with-vro-35.png">
@@ -318,10 +318,10 @@ And finally some doughnut has added a serial port to a VM. :doughnut: :grin:
 ## Conclusion and Wrap Up
 Much as I try not to, we are going to have to call a temporary stop to proceedings here.
 
-In this post we looked at regulatory compliance standards and benchmarks, vSphere tag creation and application and finally (for the majority of the post) at configuring vRealise Operations to continually monitor for system hardening benchmark compliance.
+In this post we looked at regulatory compliance standards and benchmarks, vSphere tag creation and application and finally (for the majority of the post) at configuring vRealize Operations to continually monitor for system hardening benchmark compliance.
 
 Next time we will look at creating a dashboards and reports to publicise our example PolarClouds lab environment CIS compliance and and non-compliances further.
 
-Sure compliance is a dry and often a difficult subject to crack, however hopefully with the use of a automated and continuous monitoring tool such as vRealise Operations, we can ensure that our vSphere environment is always meeting its required compliance standard, whatever standard that may be.
+Sure compliance is a dry and often a difficult subject to crack, however hopefully with the use of a automated and continuous monitoring tool such as vRealize Operations, we can ensure that our vSphere environment is always meeting its required compliance standard, whatever standard that may be.
 
 -Chris
