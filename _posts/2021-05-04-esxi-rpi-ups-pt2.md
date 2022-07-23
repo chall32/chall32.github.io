@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "UPS Triggered Shut Down of ESXi from Raspberry Pi: Part 2" 
+title: "UPS Triggered Shut Down of ESXi from Raspberry Pi - Part 2" 
 excerpt: "Connectivity and Software Installation"
 tags: 
 - Pro-Tip
@@ -20,9 +20,9 @@ We also got familiar with the hardware and software needed to action a controlle
 
 As mentioned, this post is part 2 of a multipart series. Find the other parts here:
 
-- Part 1: [Hardware, Requirement, Software, Solution](https://polarclouds.co.uk/esxi-rpi-ups-pt1)
+- Part 1: [Hardware, Requirement, Software, Solution](/esxi-rpi-ups-pt1/){:target="_blank"}
 - Part 2: This part - Connectivity and Software Installation
-- Part 3: *Coming Soon!*
+- Part 3: [Scripting for the win... or should that be for the failure?](/esxi-rpi-ups-pt3/){:target="_blank"}
 
 To recap, we are going to make our Raspberry Pi "the brains of the operation" in our solution.
 
@@ -162,9 +162,9 @@ In this post we hooked up our hardware, checked UPS and Raspberry Pi connectivit
 This post is part 2 of a multipart series. 
 
 Find the other parts here:
-- Part 1: [Hardware, Requirement, Software, Solution](https://polarclouds.co.uk/esxi-rpi-ups-pt1)
+- Part 1: [Hardware, Requirement, Software, Solution](/esxi-rpi-ups-pt1/){:target="_blank"}
 - Part 2: This part - Connectivity and Software Installation
-- Part 3: *Coming Soon!*
+- Part 3: [Scripting for the win... or should that be for the failure?](/esxi-rpi-ups-pt3/){:target="_blank"}
 
 Look out for future parts coming soon!
 

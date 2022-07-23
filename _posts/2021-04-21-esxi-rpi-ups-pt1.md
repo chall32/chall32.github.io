@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "UPS Triggered Shut Down of ESXi from Raspberry Pi: Part 1" 
+title: "UPS Triggered Shut Down of ESXi from Raspberry Pi - Part 1" 
 excerpt: "Hardware, Requirement, Software, Solution"
 tags: 
 - Pro-Tip
@@ -26,8 +26,8 @@ Over the posts in this series I'll put together a solution to monitor the UPS as
 
 This post is part 1 of a multipart series. Find the other parts here:
 - Part 1: This part - Hardware, Requirement, Software, Solution<br>
-- Part 2: [Connectivity and Software Installation](https://polarclouds.co.uk/esxi-rpi-ups-pt2/)
-- Part 3: *Coming Soon!*
+- Part 2: [Hardware Connectivity and Software Installation](/esxi-rpi-ups-pt2/){:target="_blank"}
+- Part 3: [Scripting for the win... or should that be for the failure?](/esxi-rpi-ups-pt3/){:target="_blank"}
 {% include _toc.html %}
 ## Hardware
 Lets look at list of hardware that I wish to run from the [APC Smart-UPS C1500](https://www.apc.com/shop/uk/en/products/APC-Smart-UPS-C-1500VA-LCD-230V/P-SMC1500I) UPS:
@@ -109,8 +109,8 @@ This post is part 1 of a multipart series.
 
 Find the other parts here:
 - Part 1: This part - Hardware, Requirement, Software, Solution
-- Part 2: [Connectivity and Software Installation](https://polarclouds.co.uk/esxi-rpi-ups-pt2/)
-- Part 3: *Coming Soon!*
+- Part 2: [Hardware Connectivity and Software Installation](/esxi-rpi-ups-pt2/){:target="_blank"}
+- Part 3: [Scripting for the win... or should that be for the failure?](/esxi-rpi-ups-pt3/){:target="_blank"}
 
 Look out for future parts coming soon!
 
