@@ -14,7 +14,7 @@ Back then the blog was hosted on Blogger as “What the…..?” blog.  What the
 
 Some 145+ blog posts later, here we are at What the's new resting place; polarclouds.co.uk.
 
-The name polarclouds comes from those super cool stratospheric beautiful whips of cloud that appear in the the twilight hours in the arctic and antarctic polar regions.  
+The name polarclouds comes from those super cool stratospheric beautiful whips of cloud that appear in the the twilight hours in the Arctic and Antarctic polar regions.  
 
 To the layperson, a polar cloud looks beautiful just hanging there stationary in the twilight sun.
 
@@ -54,6 +54,15 @@ _**Polar Clouds** – constantly changing, constantly adapting, constantly looki
 </td>
 <td style="height:33%;  width:33%;">
 <a target="_blank" href="https://www.credly.com/badges/482bbdd4-4837-42d6-b0ad-affda8611f35/public_url"><img alt="VMware IT Academy Cloud and Virtualization Concepts" src="/images/pages/it-academy-cvc.png"></a>
+</td>
+</tr>
+<tr>
+<td style="height:33%;  width:33%;">
+<a target="_blank" href="https://www.credly.com/badges/a5e890b5-8b0f-4939-b1a6-4ec82653b68b/public_url"><img alt="VMware Skyline Advisor Pro Technologist: Intermediate" src="/images/pages/skyline-pro.png"></a>
+</td>
+<td style="height:33%;  width:33%;">
+</td>
+<td style="height:33%;  width:33%;">
 </td>
 </tr>
 </table>
