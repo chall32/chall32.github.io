@@ -2,7 +2,7 @@
 
 title:            Polar Clouds
 locale:           en_GB
-timezone:         GB
+timezone:         Europe/London
 url:		  https://polarclouds.co.uk
 enforce_ssl:	  polarclouds.co.uk
 
