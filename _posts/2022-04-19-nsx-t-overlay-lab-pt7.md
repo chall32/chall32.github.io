@@ -41,6 +41,8 @@ Using a tier-1 gateway enables more granular control on logical segments in the 
 ## Create Tier-1 Gateway
 Lets create our first Tier-1 gateway. Select the Global Manager from the NSX web manager task bar drop down. From there, select **Networking > Tier-1 Gateways**. Select **Add Tier-1 Gateway**. 
 
+ <i>**NOTE: NSX 4.0.0.1+**: Set Tier-1 to HA Mode to **Distributed Only**. This allows the Tier-1 to become Active across all sites, but removes services such as NAT and Gateway Firewalling.</i>
+
 Name the Gateway **Site-A-Specific** and link it to **Multi-Site-T0**:
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Site-A-T1 1" src="/images/nsx-t-overlay-lab-pt7/nsx-t-overlay-lab-pt7-01.png">
