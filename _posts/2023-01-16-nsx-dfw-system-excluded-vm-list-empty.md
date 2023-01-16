@@ -62,7 +62,7 @@ Which when run on the ESXi host in question, looks like this (I suggest reading 
 
 I was then able to access my NSX Manager and change my default rules back.
 
-For good measure after recovery, and I rebooted my ESXi host too.
+For good measure after recovery I rebooted my ESXi host too.
 
 ## Recovery - Discussion Points
 Some points to consider:
