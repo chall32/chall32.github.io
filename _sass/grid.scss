@@ -24,7 +24,7 @@ $margin: 0;
 @mixin grid($grid:$def_grid,$cols:'',$float:left,$display:inline){
   display:$display;
   float:$float;
-  width:calc(100%/$grid * $cols) - ($margin * 2);
+  width:(100%/$grid * $cols) - ($margin * 2);
 }
 
 /*
@@ -33,7 +33,7 @@ $margin: 0;
    ========================================================================== */
 
 @mixin prefix($grid:$def_grid,$cols:''){
-  margin-left:calc(100%/$grid * $cols);
+  margin-left:(100%/$grid * $cols);
 }
 
 /*
@@ -42,7 +42,7 @@ $margin: 0;
    ========================================================================== */
 
 @mixin suffix($grid:$def_grid,$cols:''){
-  margin-right:calc(100%/$grid * $cols);
+  margin-right:(100%/$grid * $cols);
 }
 
 /*

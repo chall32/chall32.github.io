@@ -98,18 +98,18 @@ $button-size: 1.5rem;
 @mixin navicon-line() {
 	display: inline-block;
 	width: $button-size;
-	height: calc($button-size / 7);
+	height: $button-size/7;
 	// line color
 	background: $white;
-	border-radius: calc($button-size / 14);
+	border-radius: $button-size/14;
 	transition: .3s;
 }
 .navicon-lines-button {
-	padding: calc($button-size / 4) calc($button-size / 2);
+	padding: $button-size/4 $button-size/2;
 	transition: .3s;
 	cursor: pointer;
 	user-select: none;
-	border-radius: calc($button-size / 7);
+	border-radius: $button-size/7;
 }
 .navicon-lines-button:hover {
 	opacity: 1;
@@ -119,7 +119,7 @@ $button-size: 1.5rem;
 }
 .navicon-lines {
 	margin-right: 10px;
-	margin-bottom: calc($button-size / 5);
+	margin-bottom: $button-size/5;
 	// create middle line
 	@include navicon-line;
 	position: relative;
@@ -130,17 +130,17 @@ $button-size: 1.5rem;
 		position: absolute;
 		left: 0;
 		content: '';
-		-webkit-transform-origin: calc($button-size / 14) center;
-		transform-origin: calc($button-size / 14) center;
+		-webkit-transform-origin: $button-size/14 center;
+		transform-origin: $button-size/14 center;
 	}
-	&:before { top: calc($button-size / 4); }
-	&:after { top: calc(($button-size / 4) * -1); }	
+	&:before { top: $button-size/4; }
+	&:after { top: -$button-size/4; }
 }
 .navicon-lines-button:hover {
 	opacity: 1;
 	.navicon-lines {
-		&:before { top: calc($button-size / 3.5); }
-		&:after { top: calc(($button-size / 3.5) * -1); }
+		&:before { top: $button-size/3.5; }
+		&:after { top: -$button-size/3.5; }
 	}
 }
 .navicon-lines-button.x.active .navicon-lines {
@@ -277,7 +277,7 @@ $button-size: 1.5rem;
 			@include font-rem(20);
 			&.link-post {
 				margin-bottom: 0px + $doc-line-height;
-				margin-bottom: 0rem + calc($doc-line-height / $doc-font-size);
+				margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
 			}
 		}
 		p {
@@ -610,7 +610,7 @@ $button-size: 1.5rem;
 /* Social media brand buttons */
 .social-share {
   margin-bottom: 0px + $doc-line-height;
-  margin-bottom: 0rem + calc($doc-line-height / $doc-font-size);
+  margin-bottom: 0rem + ($doc-line-height / $doc-font-size);
   ul, li {
   	white-space: nowrap;
   	margin: 0;
