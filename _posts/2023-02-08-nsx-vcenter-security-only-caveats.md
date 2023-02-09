@@ -86,7 +86,7 @@ Without the distributed firewall, all VMs would be exposed to undesirable traffi
 So we are stuck. 
 
 ## Possible Workaround
-A potential way around this would be to remove a host form the existing cluster, rebuild and use this rebuilt host as a basis to create a new cluster with its own distributed switch. From there VMs could be migrated from existing hosts and VMs into the new cluster. Existing firewall rules would follow the VMs to the new cluster.
+A potential way around this would be to remove a host from the existing cluster, rebuild and use this rebuilt host as a basis to create a new cluster with its own distributed switch. From there VMs could be migrated from existing hosts on to the new cluster. Existing firewall rules would follow the VMs to the new cluster.
 
 However this would assume that there is enough capacity in the existing cluster allow the removal and rebuild of a host in the first place.
 
