@@ -21,11 +21,12 @@ To the layperson, a polar cloud looks beautiful just hanging there stationary in
 To those in the know, a polar cloud is actually a fast moving, constantly changing mass of tiny moving parts coming together to make something cohesive.
 
 _**Polar Clouds** – constantly changing, constantly adapting, constantly looking beautiful, constantly at peace with their environment…_
+
 ## Chris' Certifications Accreditations Qualifications
 <table>
 <tr>
 <td style="height:33%;  width:33%;">
-<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2022" src="/images/pages/vexpert2022.png"></a>
+<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2023" src="/images/pages/vexpert2023.png"></a>
 </td>
 <td style="height:33%;  width:33%;">
 <a target="_blank" href="https://www.credly.com/badges/5a8718f7-d27f-434a-b91f-d81f62022045/public_url"><img alt="Rubrik Technical Professional" src="/images/pages/rubrik-technical-professional.png"></a>
@@ -36,7 +37,7 @@ _**Polar Clouds** – constantly changing, constantly adapting, constantly looki
 </tr>
 <tr>
 <td style="height:33%;  width:33%;">
-<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2021" src="/images/pages/vexpert2021.png"></a>
+<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2022" src="/images/pages/vexpert2022.png"></a>
 </td>
 <td style="height:33%;  width:33%;">
 <a target="_blank" href="https://www.credly.com/badges/b9197d7b-a0ca-4c53-94da-63b1618ab941/public_url"><img alt="VMware IT Academy Network Virtualisation Concepts" src="/images/pages/it-academy-nvc.png"></a>
@@ -47,7 +48,7 @@ _**Polar Clouds** – constantly changing, constantly adapting, constantly looki
 </tr>
 <tr>
 <td style="height:33%;  width:33%;">
-<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2020" src="/images/pages/vexpert2020.png"></a>
+<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2021" src="/images/pages/vexpert2021.png"></a>
 </td>
 <td style="height:33%;  width:33%;">
 <a target="_blank" href="https://partners.device42.com/#/learning/certifications"><img alt="Device 42 Technical Associate" src="/images/pages/d42tasc.png"></a>
@@ -58,9 +59,10 @@ _**Polar Clouds** – constantly changing, constantly adapting, constantly looki
 </tr>
 <tr>
 <td style="height:33%;  width:33%;">
-<a target="_blank" href="https://www.credly.com/badges/a5e890b5-8b0f-4939-b1a6-4ec82653b68b/public_url"><img alt="VMware Skyline Advisor Pro Technologist: Intermediate" src="/images/pages/skyline-pro.png"></a>
+<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img alt="VMware vExpert 2020" src="/images/pages/vexpert2020.png"></a>
 </td>
 <td style="height:33%;  width:33%;">
+<a target="_blank" href="https://www.credly.com/badges/a5e890b5-8b0f-4939-b1a6-4ec82653b68b/public_url"><img alt="VMware Skyline Advisor Pro Technologist: Intermediate" src="/images/pages/skyline-pro.png"></a>
 </td>
 <td style="height:33%;  width:33%;">
 </td>
