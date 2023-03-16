@@ -58,7 +58,7 @@ With everyone suitably annoyed, let's move on! :wink:
 Right, let's learn through doing. 
 
 ## Nutanix ISO Download
-We will deploy the Community Edition 2.0 (released March 2023) available [HERE](https://next.nutanix.com/discussion-forum-14/download-community-edition-38417){:target="_blank"}, no login required.
+We will deploy the Community Edition 2.0 (released March 2023) available [HERE](https://download.nutanix.com/ce/2023.03.01/phoenix-ce2.0-fraser-6.5.2-stable-fnd-5.3.4-x86_64.iso){:target="_blank"}, no login required.
 
 Download the CE 2.0 ISO **phoenix-ce2.0-fraser-6.5.2-stable-fnd-5.3.4-x86_64.iso**:
 
