@@ -289,6 +289,6 @@ In future posts we will be looking to finish our AHV host configuration, spinnin
 This post is part 1 of a multipart series. Find the other parts here:
 
 - Part 1: This Part: Now it's Time for Something Different
-- Part 2: Configuration and Test VM Build - **Coming Soon!**
+- Part 2: [Configuration and Test VM Build](/nested-nutanix-ce-deployment-pt2/){:target="_blank"}
 
 -Chris
