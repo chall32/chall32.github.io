@@ -91,4 +91,6 @@ That will do it for this time. If you are still thirsty for more take a look at 
 
 Next time we will take a look at the data protection features built into DSF such as data replication, erasure coding, and data-at-rest encryption. 
 
+You can find that post here: [Nutanix Distributed Storage Fabric Protection Concepts](/nutanix-storage-protection-concepts/){:target="_blank"}.
+
 -Chris
