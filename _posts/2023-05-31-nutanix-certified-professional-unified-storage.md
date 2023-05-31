@@ -5,7 +5,7 @@ excerpt: "Certified Storage Professional"
 tags: 
 - Nutanix
 image:
-  thumb: /nutanix-certified-professional-multicloud-infrastructure/nutanix-certified-professional-multicloud-infrastructure.png
+  thumb: pages/ncp-us.png
 comments: true
 date: 2023-05-31T00:00:00+00:00
 ---
