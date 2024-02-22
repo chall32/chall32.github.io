@@ -6,6 +6,7 @@ tags:
 - Nutanix
 image:
   thumb: nutanix-ce-hba-passthrough/nutanix-ce-hba-passthrough-01.png
+comments: true
 date: 2024-02-20T00:00:00+00:00
 ---
 <img style="float: right; margin: 0px 0px 10px 10px;" alt="Nutanix CE HBA Passthrough" src="/images/nutanix-ce-hba-passthrough/nutanix-ce-hba-passthrough-01.png">
