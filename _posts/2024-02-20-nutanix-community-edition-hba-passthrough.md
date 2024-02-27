@@ -258,6 +258,8 @@ The whole ethos behind CE is that support comes from the community as per the [C
 
 Is this level of modification supported? No, but I'm happy to run my CE install with a config that matches that seen in Nutanix enterprise deployments and enjoy the performance boost.
 
+Want to see the numbers behind the boost?  Take a look at my post [Testing Nutanix Community Edition HBA Passthrough](/nutanix-community-edition-hba-passthrough-testing/){:target="_blank"}.
+
 Until next time...
 
  -Chris

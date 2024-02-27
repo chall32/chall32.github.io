@@ -151,7 +151,7 @@ Let's dig into the results.
 
 Well there we have it. Gains across the board with equal performance in one result. Nice!
 
-Sure, gains are to be expected because by using HBA passthrough we are simplifying the I/O path to our storage. What is interesting is to se the level of change that the simplification affords us.  
+Sure, gains are to be expected because by using HBA passthrough we are simplifying the I/O path to our storage. What is interesting is to see the level of change that the simplification affords us.  
 
 Since we have them too, lets compare the maximum and minimum results too.
 ### Maximums
