@@ -77,6 +77,19 @@ Following the Move [deployment documentation](https://portal.nutanix.com/page/do
 
 Download the installer from the [Nutanix Portal](https://portal.nutanix.com/page/downloads?product=move){:target="_blank"}. Use the same free account you used when installing CE to access the Move downloads. As mentioned, Move is free to download and use.
 
+### [Update] Portal Fun
+It has been brought to my attention that accessing downloads from the Nutanix Portal is sometimes tricky for Community Edition only users. After some further testing, the following process should allow you access to the downloads area of the Nutanix portal:
+
+1. Create a Community Edition account as normal at [https://www.nutanix.com/products/community-edition/register](https://www.nutanix.com/products/community-edition/register){:target="_blank"}
+2. Verify email address via link sent in email
+3. Navigate and login (with credentials set above) to [https://my.nutanix.com/](https://my.nutanix.com/){:target="_blank"}
+4. Scroll down to, launch and register with Nutanix University - again using credentials set above
+5. Launch [https://portal.nutanix.com](https://portal.nutanix.com/){:target="_blank"} directly (as in enter this address into your browser)
+
+You'll know you've got it correct when portal.nutanix stops redirecting you to my.nutanix. Finally, with stable access to portal.nutanix, click the hamburger menu (top left) to access downloads.
+
+As you can gleam from the above, it seems that downloads are only available to those that also have University accounts. Thanks to Brandon at [virtualizationhowto.com](https://www.virtualizationhowto.com/){:target="_blank"} for reaching out on this. Cheers Brandon!
+
 ### Upload Move Disk Image
 Log into Prism Element running on your CE cluster (https: // your-cluster : 9440). Click the settings cog in the top right hand corner of the Prism Element UI, select Image Configuration from the menu on the left.
 
