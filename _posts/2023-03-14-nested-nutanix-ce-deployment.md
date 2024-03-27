@@ -103,6 +103,20 @@ Let's create our VM. A VM with the following configuration is required:
 - 1 VMXNET3 Network Adapter 
 - VM Options > Boot Options > Firmware > BIOS
 
+Finally, so that ESXi always presents consistent disk UUIDs to our AHV VM, we need to set **disk.EnableUUID** to **TRUE** in our AHV VM advanced settings. This can be achieved as follows:
+
+1. Select the AHV VM and select **Actions > Edit Settings**
+2. Select **VM Options** and expand the **Advanced** section
+3. Click **EDIT CONFIGURATION**
+4. Select **ADD CONFIGURATION PARAMS**  
+5. Add the param name **disk.EnableUUID** and set the value to **TRUE**
+
+<img style="display: block; margin-left: auto; margin-right: auto;" alt="disk.enableuuid true" src="/images/nested-nutanix-ce-deployment/nested-nutanix-ce-deployment-20.png">
+
+Further details on setting **disk.EnableUUID** can be found in the resolution section of VMware [KB52815](https://kb.vmware.com/s/article/52815){:target="_blank"}.
+
+Click OK to save and power the AHV VM as normal. 
+
 Once booted from the **phoenix-ce2.0-fraser-6.5.2-stable-fnd-5.3.4-x86_64.iso** and after a short delay, the following is seen:
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="AOS Installer 1" src="/images/nested-nutanix-ce-deployment/nested-nutanix-ce-deployment-05.png">
