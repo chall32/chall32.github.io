@@ -250,6 +250,8 @@ Finally, who knew that Hank Scorpio and Bill Lumbergh were such avid readers if 
 
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Bill Says..." src="/images/virtual-private-cloud-basics-with-nutanix-flow/virtual-private-cloud-basics-with-nutanix-flow-23.png">
 
-Looks like Bill is wanting to make use of his VPC as soon as possible... Stay tuned for part 2 coming soon.
+Looks like Bill is wanting to make use of his VPC as soon as possible... 
+
+Part 2 is now available: [Virtual Private Cloud Basics with Nutanix Flow - Part 2](/virtual-private-cloud-basics-with-nutanix-flow-pt2/){:target="_blank"}.
 
 -Chris
