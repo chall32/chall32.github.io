@@ -127,7 +127,7 @@ As detailed in the script, it has been fully tested on Windows Server 2022 (21H2
 
 [go.microsoft.com](https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US){:target="_blank"}
 
-Having said that, the script *should* word without issue on Windows Server 2019.
+Having said that, the script *should* work without issue on Windows Server 2019.
 
 After running the New-Darksite.ps1, simply download and extract LCM bundles to `C:\inetpub\wwwroot\release\builds` folder.
 
