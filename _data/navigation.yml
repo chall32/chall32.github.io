@@ -9,9 +9,6 @@
 - title: "All Posts"
   url: /pages/all-posts/
 
-- title: LDWin
-  url: https://github.com/chall32/LDWin#ldwin
-
 - title: Qualifications
   url: /pages/qualifications/
 
@@ -20,3 +17,6 @@
 
 - title: About
   url: /pages/about/
+
+- title: "Chris at Credly"
+  url: https://www.credly.com/users/chris-hall.polarclouds
