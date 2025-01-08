@@ -24,7 +24,10 @@ sitemap: false
 @import "forms";
 @import "page";
 @import "syntax";
-@import "vendor/font-awesome/font-awesome";
+@import "vendor/font-awesome/fontawesome.scss";
+@import "vendor/font-awesome/solid.scss";
+@import "vendor/font-awesome/brands.scss";
+@import "vendor/font-awesome/v4-shims.scss";
 @import "vendor/magnific-popup/magnific-popup";
 //@import "vendor/google/fonts";
 @import "print";
