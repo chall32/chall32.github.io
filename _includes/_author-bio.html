@@ -12,7 +12,6 @@
 
   <h3 itemprop="name">{{ author.name }}</h3>
   <p>{{ author.bio }}</p>
-
   {% if author.email %}<a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>{% endif %}
   {% if author.bluesky-personal %}<a href="https://bsky.app/profile/{{ author.bluesky-personal }}" class="author-social" target="_blank"><i class="fa-brands fa-square-bluesky"></i>&nbsp &nbsp Bluesky</a>{% endif %}
   {% if author.bluesky %}<a href="https://bsky.app/profile/{{ author.bluesky }}" class="author-social" target="_blank"><i class="fa-brands fa-square-bluesky"></i>&nbsp &nbsp PolarCloudsUK</a>{% endif %}
@@ -36,8 +35,8 @@
   {% if author.weibo %}<a href="http://www.weibo.com/{{ author.weibo }}" class="author-social" target="_blank"><i class="fa fa-fw fa-weibo"></i> Weibo</a>{% endif %}
   {% if author.flickr %}<a href="http://www.flickr.com/{{ author.flickr }}" class="author-social" target="_blank"><i class="fa fa-fw fa-flickr"></i> Flickr</a>{% endif %}
   {% if author.codepen %}<a href="http://codepen.io/{{ author.codepen }}" class="author-social" target="_blank"><i class="fa fa-fw fa-codepen"></i> CodePen</a>{% endif %}
-<br>
-<a target="_blank" href="https://www.credly.com/badges/2450b422-6849-4560-bdba-ecc0334b8e41/public_url"><img src="{{ site.url }}/images/pages/nutanix-certified-master-mci.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Master - Multicloud Infrastructure 6"</a>
+<a target="_blank" href="https://event.nutanix.com/multicloudexperts1"><img src="{{ site.url }}/images/multicloud-expert-community/multicloud-expert-community-01.png" class="bio-badge" alt="Join Nutanix Multicloud Experts"></a>
+<a target="_blank" href="https://www.credly.com/badges/2450b422-6849-4560-bdba-ecc0334b8e41/public_url"><img src="{{ site.url }}/images/pages/nutanix-certified-master-mci.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Master - Multicloud Infrastructure 6"></a>
 <a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img src="{{ site.url }}/images/pages/vexpert2024.png" class="bio-badge" alt="{{ author.name }} VMware vExpert 2024"></a>
 <a target="_blank" href="https://www.credly.com/badges/845e4f77-016e-4111-b75b-22da03634407/public_url"><img src="{{ site.url }}/images/pages/nutanix-certified-professional-ci.png" class="bio-badge" alt="Nutanix Certified Professional - Cloud Integration" ></a> 
 <a target="_blank" href="https://www.credly.com/badges/231fa9a9-fd75-4cc9-b7b2-f7e7a50a2c18/public_url"><img src="{{ site.url }}/images/pages/nutanix-certified-professional-mci.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Professional - Multicloud Infrastructure 6"></a>
