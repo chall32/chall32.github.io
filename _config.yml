@@ -45,8 +45,8 @@ owner:
   bio: "Principal Technical Consultant"
   email:
   disqus-shortname: chall32
-  twitter: PolarCloudsUK
-  twitter-personal: chall32
+  twitter: #PolarCloudsUK
+  twitter-personal: #chall32
   bluesky-personal: chall32.bsky.social
   facebook: #username
   google:
@@ -67,7 +67,7 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: #username
+  youtube: chall32
   soundcloud: #username
   weibo: #username
   flickr: #username

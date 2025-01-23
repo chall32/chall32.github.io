@@ -2,19 +2,19 @@
   <h4>Share on</h4>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="twitter" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://bsky.app/intent/compose?text={{ page.title }} {{ site.url }}{{ page.url }}" target="_blank" class="twitter" title="Share on Bluesky"><i class="fa-brands fa-bluesky"></i><span> Bluesky</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" class="facebook" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="http://www.reddit.com/submit?title={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank" class="reddit" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
     <li>
-      <a href="https://linkedin.com/shareArticle?url={{ site.url }}{{ page.url }}" class="linkedin" title="Share on LinkedIn"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
+      <a href="https://www.linkedin.com/feed/?shareActive=true&text={{ page.title }} {{ site.url }}{{ page.url }}" target="_blank" class="linkedin" title="Share on LinkedIn"><i class="fa fa-linkedin"></i><span> LinkedIn</span></a>
     </li>
   	<li>
-	 <a href="https://wa.me/?text={{ site.url }}{{ page.url }}" class="whatsapp" title="Share on WhatsApp"><i class="fa fa-whatsapp"></i><span> WhatsApp</span></a>
+	 <a href="https://wa.me/?text={{ page.title }} {{ site.url }}{{ page.url }}" target="_blank" class="whatsapp" title="Share on WhatsApp"><i class="fa fa-whatsapp"></i><span> WhatsApp</span></a>
 	</li>	
   </ul>
 </div><!-- /.social-share -->
