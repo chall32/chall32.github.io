@@ -18,6 +18,8 @@ One post for them all if you like.
 First off, a quick primer on creating an SSH public and private key pair. In some situations that I'll cover below, having an SSH key will allow us access to reset passwords. However the [standard disclaimer](/pages/disclaimer/){:target="_blank"} applies: With great power comes great responsibility: Handling and storage of SSH keys should be carefully considered too!
 {% include _toc.html %}
 ## Creating an SSH Key Pair
+Nutanix supports key-based SSH access for the nutanix or admin accounts, as discussed in the Nutanix Security Guide - [Controlling Cluster Access](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v7_0:wc-security-cluster-lockdown-wc-t.html){:target="_blank"} and [Controlling Remote (SSH) Access - Prism Central ](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Security-Guide-v7_0:mul-security-cluster-lockdown-pc-t.html){:target="_blank"}.
+
 To create an SSH private public key pair, the following command can be used. This command works in Linux, Windows, MacOS:
 ```
 ssh-keygen -a 100 -t ed25519 -C "Chris @ PolarClouds"
@@ -44,7 +46,7 @@ Next, lets import our new public key into our Nutanix environment:<br>
 1. Log onto your cluster Prism Element interface
 2. Select **Settings (Cog in top right hand corner) > Cluster Lockdown**
 3. (Optional) Repeat for Prism Central. After logging into Prism Central, select **Settings (Cog in top right hand corner) > More Settings > Cluster Lockdown**
-4. Name the key and paste the contents of the .pub key in to the key space:<br><br>
+4. Name the key (doesn't need to match an account name) and paste the contents of the .pub key in to the key space:<br><br>
   <img style="display: block; margin-left: auto; margin-right: auto;" alt="Import SSH key into Prism" src="/images/lost-or-forgotten-passwords-nutanix/lost-or-forgotten-passwords-nutanix-04.png"><br>
 5. Save when done. Lets test from the machine I used to create the key pair:
 
