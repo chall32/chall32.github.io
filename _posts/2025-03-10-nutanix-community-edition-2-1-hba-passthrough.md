@@ -117,7 +117,9 @@ OK, so using the knowledge from the section Let's Do This Again above and the KB
 
 First, we'll backup the cvm config file just in case we need it later:
 
-`cp /etc/nutanix/config/cvm_config.json /etc/nutanix/config/cvm_config.json.backup`
+{% highlight shell %}
+cp /etc/nutanix/config/cvm_config.json /etc/nutanix/config/cvm_config.json.backup
+{% endhighlight %}
 
 Next, lets open the file with vi: `vi /etc/nutanix/config/cvm_config.json`.  Scrolling down the the devices disks section we can see our two Samsung SSD's defined; the same two we saw at the very beginning of the CE v2.1 installer:
 
