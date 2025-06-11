@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem "octopress"
-gem "jemoji"
-gem "kramdown-parser-gfm"
+# GitHub Pages gem - includes Jekyll and all compatible plugins
+gem "github-pages", group: :jekyll_plugins
+
+# Additional gems that aren't included in github-pages
+gem "octopress"  # Not included in github-pages gem
+gem "kramdown-parser-gfm"  # For GitHub Flavoured Markdown

@@ -16,6 +16,7 @@ sass:
   style: compressed
 plugins:
   - jekyll-sitemap
+  - jekyll-gist
   - jemoji
 
 kramdown:
