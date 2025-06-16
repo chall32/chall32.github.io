@@ -200,6 +200,7 @@ That's it for part 1 of my NKP deployment series! In the next post, we'll dive d
 This is part one of a multipart series. Other parts of the series can be found:
 
 - [Nutanix Kubernetes Platform Deployment - Part 1](/nutanix-kubernetes-platform-deployment-pt1/): (This part) NKP Lab Deployment Preparation
-- Nutanix Kubernetes Platform Deployment - Part 2: *Coming Soon!*
+- [Nutanix Kubernetes Platform Deployment - Part 2](/nutanix-kubernetes-platform-deployment-pt2/): NKP Lab Deployment
+
 
 -Chris
