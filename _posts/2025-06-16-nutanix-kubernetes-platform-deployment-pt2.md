@@ -203,9 +203,9 @@ Here is a breakdown of the flags used:
 | --verbose | int | Output verbosity |
 
 ## Deployment Video
-Throughout my previous two posts, I've been building up to this moment: an NKP installation successfully running. 
+So here we go then, the culmination of everything in the NKP series so far; NKP successfully deploying and running. 
 
-Take a look at the just over 6 minute video below to see it in action:
+Take a look at the just over 6 minute video below to catch the action:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/en8nj74H8Ok?si=ASZXWRpze0Nbkbtr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
