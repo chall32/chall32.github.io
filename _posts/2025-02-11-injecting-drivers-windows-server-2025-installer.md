@@ -83,7 +83,8 @@ As highlighted, the only required feature are the deployment tools.
 ## Driver Injection - This Won't Hurt One Bit
 Now we have our requirements met, lets set up for some injection. First, mount (double click in Windows) the Windows Installation ISO Image and copy all the files to `C:\Windows-ISO`. If using PowerShell and Windows ISO is mounted at E:\
 {% highlight powershell %}
-Copy-Item "E:\" -Destination "C:\Windows-ISO" -Recurse -Force
+Copy-Item "E:\*" -Destination "C:\Windows-ISO" -Recurse -Force
+attrib -R "C:\Windows-ISO\*" /S
 {% endhighlight %}
 Unmount the image when done. 
 
@@ -92,7 +93,7 @@ Next, mount the Nutanix VirtIO Driver ISO Image and copy the matching driver fol
 <img style="display: block; margin-left: auto; margin-right: auto;" alt="Pick A Driver" src="/images/injecting-drivers-windows-server-2025-installer/injecting-drivers-windows-server-2025-installer-04.png">
 
 {% highlight powershell %}
-Copy-Item "E:\Windows Server 2025" -Destination "C:\Drivers" -Recurse -Force
+Copy-Item "E:\Windows Server 2025\*" -Destination "C:\Drivers" -Recurse -Force
 {% endhighlight %}
 Next, we will need to create an empty folder `C:\Wim` to temporarily mount the Windows Imaging Format (WIM) files for update:
 {% highlight powershell %}
@@ -119,8 +120,7 @@ ForEach ($Image in (Get-WindowsImage -ImagePath "$WinISOPath\sources\install.wim
     Add-WindowsDriver -Path "$WimMount" -Driver "$DriverPath" -Recurse
     Dismount-WindowsImage -Path "$WimMount" -Save
 }
-Start-Process -NoNewWindow -FilePath "$OscdimgPath\oscdimg.exe" ` 
-    -ArgumentList "-m -o -u2 -udfver102 -bootdata:2#p0,e,b$WinISOPath\boot\etfsboot.com#pEF,e,b$WinISOPath\efi\microsoft\boot\efisys.bin $WinISOPath $OutISOFull"
+Start-Process -NoNewWindow -FilePath "$OscdimgPath\oscdimg.exe" -ArgumentList "-m -o -u2 -udfver102 -bootdata:2#p0,e,b$WinISOPath\boot\etfsboot.com#pEF,e,b$WinISOPath\efi\microsoft\boot\efisys.bin $WinISOPath $OutISOFull"
 Write-Host "Done!"
 {% endhighlight %}
 
@@ -137,8 +137,8 @@ Breaking the script down by line number:
 - 11: Unmount the mounted image and save
 - 12: Loop back to line 7 for next image in boot.wim
 - 13 to 18: Find, loop and inject drivers into Windows install images found in install.wim
-- 19, 20: Create a legacy/UEFI bootable x64 ISO image using oscdimg
-- 21: Report done!
+- 19: Create a legacy/UEFI bootable x64 ISO image using oscdimg
+- 20: Report done!
 
 For details on the oscdimg switches used, see the Microsoft article [Oscdimg Command-Line Options](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/oscdimg-command-line-options?view=windows-11){:target="_blank"}.
 
