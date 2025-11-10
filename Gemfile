@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
 # GitHub Pages gem - includes Jekyll and all compatible plugins
+gem "faraday"
+gem "faraday-retry"
 gem "github-pages", group: :jekyll_plugins
 
 # Additional gems that aren't included in github-pages
