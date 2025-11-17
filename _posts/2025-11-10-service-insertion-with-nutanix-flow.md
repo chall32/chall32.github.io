@@ -206,7 +206,7 @@ As touched on earlier, other vendor firewall software validated to support servi
 
 If you are interested in more Nutanix Flow Network Security content closer to home, on this here blog, feel free to head over to any/all of these posts:
 * [Microsegmentation with Nutanix Flow Network Security](/microsegmentation-with-nutanix-flow/){:target="_blank"}
-* [Traffic Discovery with Nutanix Flow Network Security](traffic-discovery-with-nutanix-flow/){:target="_blank"}
+* [Traffic Discovery with Nutanix Flow Network Security](/traffic-discovery-with-nutanix-flow/){:target="_blank"}
 * [Zero-Trust Architecture Implementation on Nutanix: A Guide](/zero-trust-a-guide/){:target="_blank"}
 
 Oh and yes... Service ***Insertion***:
