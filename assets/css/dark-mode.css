@@ -1,0 +1,527 @@
+/* Dark Mode Styles for Polar Clouds - Using Exact Site Colors */
+
+:root {
+  /* Light mode colors (your exact current colors) */
+  --bg-primary: #fff;
+  --bg-secondary: #fff; /*#f8f8f8;*/
+  --bg-tertiary: #f0f0f0;
+  --text-primary: #333332;
+  --text-secondary: #666;
+  --border-color: #333332;
+  --link-color: #343434;
+  --link-hover: #1a1a1a;
+  --link-visited: #4d4d4d;
+  --link-focus: #262626;
+  --code-bg: #f8f8f8;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --accent-color: #111;
+  --social-link-color: #111;
+  
+  /* Button colors */
+  --primary: #111;
+  --success: #5cb85c;
+  --warning: #dd8338;
+  --danger: #C64537;
+  --info: #308cbc;
+}
+
+[data-theme="dark"] {
+  /* Dark mode colors - complementary to your light theme */
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #1a1a1a; /*#2d2d2d;*/
+  --bg-tertiary: #3a3a3a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #444;
+  --link-color: #6ea8fe;
+  --link-hover: #9ec5fe;
+  --link-visited: #8db3e6;
+  --link-focus: #b8d4ff;
+  --code-bg: #2d2d2d;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --accent-color: #fff;
+  --social-link-color: #e0e0e0;
+  
+  /* Button colors adjusted for dark mode */
+  --primary: #fff;
+  --success: #6fd86f;
+  --warning: #f39c5a;
+  --danger: #e55f50;
+  --info: #4da3d3;
+}
+
+/* Apply theme colors to body and basic elements */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+/* Paragraphs and text */
+p, li, td, th, span, div {
+  color: var(--text-primary);
+}
+
+/* Links - matching your exact link color scheme */
+a {
+  color: var(--link-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:focus {
+  color: var(--link-focus);
+}
+
+/* Author social links - special handling for black links */
+.author-social {
+  color: var(--social-link-color) !important;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.author-social:visited {
+  color: var(--social-link-color) !important;
+}
+
+[data-theme="dark"] .author-social:hover {
+  color: var(--link-hover) !important;
+}
+
+[data-theme="light"] .author-social:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Font Awesome icons in social links */
+.author-social .fa,
+.author-social .fab,
+.author-social .fas {
+  color: inherit;
+}
+
+/* Main content areas */
+.post, .page-content, article, main {
+  background-color: var(--bg-primary);
+}
+
+/* Secondary backgrounds */
+.sidebar, header, nav, footer, .navigation {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+}
+
+/* Code blocks */
+pre, code, .highlight {
+  background-color: var(--code-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+pre code {
+  background-color: transparent;
+}
+
+/* Inline code */
+p code, li code {
+  background-color: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Borders and dividers */
+hr, .border, table, blockquote {
+  border-color: var(--border-color);
+}
+
+table {
+  background-color: var(--bg-primary);
+}
+
+th {
+  background-color: var(--bg-secondary);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+/* Buttons - using your color scheme */
+.btn-primary, button.primary {
+  background-color: var(--primary);
+  color: var(--bg-primary);
+  border-color: var(--primary);
+}
+
+.btn-success {
+  background-color: var(--success);
+}
+
+.btn-warning {
+  background-color: var(--warning);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+}
+
+.btn-info {
+  background-color: var(--info);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.dark-mode-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--info);
+}
+
+.dark-mode-toggle svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-primary);
+  fill: none;
+  transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover svg {
+  transform: rotate(20deg);
+}
+
+/* Icon animations */
+.sun-icon,
+.moon-icon {
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+[data-theme="light"] .sun-icon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+[data-theme="light"] .moon-icon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0);
+}
+
+[data-theme="dark"] .sun-icon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0);
+}
+
+[data-theme="dark"] .moon-icon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* Special styling for dark mode moon icon */
+[data-theme="dark"] .moon-icon {
+  stroke: #fbbf24;
+}
+
+/* Images - ensure they look good in dark mode */
+img {
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="dark"] img {
+  opacity: 0.9;
+}
+
+/* Author profile image */
+.author-photo,
+.bio-photo {
+  border-color: var(--border-color);
+}
+
+/* Navigation links */
+nav a,
+.navigation a {
+  color: var(--link-color);
+}
+
+nav a:hover,
+.navigation a:hover {
+  color: var(--link-hover);
+}
+
+/* Post metadata (dates, categories, etc.) */
+.entry-meta,
+.post-date,
+.meta {
+  color: var(--text-secondary);
+}
+
+/* Category and tag links */
+.entry-meta a,
+.tags a,
+.categories a {
+  color: var(--link-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-top-color: var(--border-color);
+}
+
+/* Responsive positioning */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    top: 10px;
+    right: 10px;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .dark-mode-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Print - always use light mode */
+@media print {
+  body {
+    background-color: #fff;
+    color: #333332;
+  }
+  
+  .dark-mode-toggle {
+    display: none;
+  }
+  
+  a {
+    color: #343434;
+  }
+  
+  .author-social {
+    color: #111 !important;
+  }
+}
+/* ============================================
+   Google Custom Search Engine Dark Mode
+   ============================================ */
+
+/* Target the main search container */
+[data-theme="dark"] .gsc-control-cse,
+[data-theme="dark"] .gsc-control-cse .gsc-table-result {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Search input box */
+[data-theme="dark"] .gsc-input-box,
+[data-theme="dark"] .gsc-input {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .gsc-input-box input.gsc-input {
+  color: var(--text-primary) !important;
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .gsc-input-box input.gsc-input::placeholder {
+  color: var(--text-secondary) !important;
+}
+
+/* Search button */
+[data-theme="dark"] .gsc-search-button,
+[data-theme="dark"] .gsc-search-button-v2 {
+  background-color: var(--bg-tertiary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .gsc-search-button-v2 svg {
+  fill: var(--text-primary) !important;
+}
+
+/* Search results */
+[data-theme="dark"] .gsc-results .gsc-cursor-box,
+[data-theme="dark"] .gsc-results {
+  background-color: var(--bg-primary) !important;
+}
+
+[data-theme="dark"] .gsc-result {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Result titles */
+[data-theme="dark"] .gs-title,
+[data-theme="dark"] .gs-title * {
+  color: var(--link-color) !important;
+}
+
+[data-theme="dark"] .gs-title:hover,
+[data-theme="dark"] .gs-title *:hover {
+  color: var(--link-hover) !important;
+}
+
+/* Result snippets/descriptions */
+[data-theme="dark"] .gs-snippet,
+[data-theme="dark"] .gs-fileFormat {
+  color: var(--text-secondary) !important;
+}
+
+/* Result URLs */
+[data-theme="dark"] .gs-visibleUrl,
+[data-theme="dark"] .gs-visibleUrl-short,
+[data-theme="dark"] .gs-visibleUrl-long {
+  color: var(--success) !important;
+}
+
+/* Pagination */
+[data-theme="dark"] .gsc-cursor-box {
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .gsc-cursor-page {
+  color: var(--link-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .gsc-cursor-page:hover {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--link-hover) !important;
+}
+
+[data-theme="dark"] .gsc-cursor-current-page {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--link-color) !important;
+}
+
+/* Suggestions and autocomplete */
+[data-theme="dark"] .gssb_c {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .gssb_a,
+[data-theme="dark"] .gssb_e {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .gssb_a:hover {
+  background-color: var(--bg-tertiary) !important;
+}
+
+[data-theme="dark"] .gssb_i {
+  color: var(--text-secondary) !important;
+}
+
+/* No results message */
+[data-theme="dark"] .gs-no-results-result .gs-snippet {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Loading spinner area */
+[data-theme="dark"] .gsc-loading-fade {
+  background-color: var(--bg-primary) !important;
+}
+
+[data-theme="dark"] .gsc-adBlock {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Clear button */
+[data-theme="dark"] .gsst_a {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .gsst_a:hover {
+  color: var(--text-primary) !important;
+}
+
+/* Watermark (powered by Google) */
+[data-theme="dark"] .gsc-branding {
+  color: var(--text-secondary) !important;
+}
+
+/* Tabbed search (if used) */
+[data-theme="dark"] .gsc-tabHeader {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .gsc-tabHeader.gsc-tabhActive {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--link-color) !important;
+}
+
+[data-theme="dark"] .gsc-tabHeader .gsc-tabData {
+  color: var(--text-primary) !important;
+}
+
+/* Override any remaining light backgrounds */
+[data-theme="dark"] .gsc-webResult.gsc-result,
+[data-theme="dark"] .gsc-webResult.gsc-result:hover,
+[data-theme="dark"] .gsc-imageResult.gsc-result,
+[data-theme="dark"] .gsc-imageResult.gsc-result:hover {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Result hover state */
+[data-theme="dark"] .gsc-webResult.gsc-result:hover {
+  background-color: var(--bg-secondary) !important;
+}
+
+/* Refinement (filter) options */
+[data-theme="dark"] .gsc-refinementsArea {
+  background-color: var(--bg-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .gsc-refinementHeader {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .gsc-refinement {
+  color: var(--link-color) !important;
+}
+
+[data-theme="dark"] .gsc-refinement:hover {
+  color: var(--link-hover) !important;
+}

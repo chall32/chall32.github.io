@@ -159,7 +159,7 @@ li {
 		margin: 0 2px;
 		padding: 0 5px;
 		border: 1px solid lighten($black, 90);
-		background-color: #efefef;
+		background-color: rgba(0, 0, 0, 0.1); /*#efefef;*/
 		@include rounded(3px);
 	}
 }
