@@ -1,36 +1,62 @@
 <meta charset="utf-8">
-<!-- Dark mode script -->
- <script>
+
+<!-- Dark mode detection -->
+<script>
   (function() {
-    const theme = localStorage.getItem('theme') || 
-                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     document.documentElement.setAttribute('data-theme', theme);
-    // Apply styles immediately
-    if (theme === 'dark') {
-      document.documentElement.style.backgroundColor = '#1a1a1a';
-      document.documentElement.style.color = '#e0e0e0';
-    }
   })();
 </script>
-<!-- Critical inline CSS for instant theme application -->
+
+<!-- Inline dark mode CSS - prevents flash -->
 <style>
-  html[data-theme="dark"] {
-    background-color: #1a1a1a !important;
-    color: #e0e0e0 !important;
-  }
+  /* Base dark theme - loads instantly */
+  html[data-theme="dark"],
   html[data-theme="dark"] body {
     background-color: #1a1a1a !important;
     color: #e0e0e0 !important;
   }
+  
+  /* Headings */
+  html[data-theme="dark"] h1,
+  html[data-theme="dark"] h2,
+  html[data-theme="dark"] h3,
+  html[data-theme="dark"] h4,
+  html[data-theme="dark"] h5,
+  html[data-theme="dark"] h6 {
+    color: #e0e0e0 !important;
+  }
+  
+  /* Text elements */
+  html[data-theme="dark"] p,
+  html[data-theme="dark"] div,
+  html[data-theme="dark"] span,
+  html[data-theme="dark"] li {
+    color: #e0e0e0 !important;
+  }
+  
+  /* Navigation and structural elements */
+  html[data-theme="dark"] .navigation-wrapper,
+  html[data-theme="dark"] header,
+  html[data-theme="dark"] nav,
+  html[data-theme="dark"] footer {
+    background-color: #1a1a1a !important;
+  }
+  
+  /* Author social links */
+  html[data-theme="dark"] .author-social {
+    color: #e0e0e0 !important;
+  }
 </style>
-<!-- Now load the rest of the CSS -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
+
+<!-- Force HTTPS -->
 <script>
-    var host = "polarclouds.co.uk";
-    if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+  var host = "polarclouds.co.uk";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
 </script>
+
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
@@ -53,34 +79,28 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- For all browsers -->
+<!-- Load main CSS -->
 <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
-
-<!-- <meta http-equiv="cleartype" content="on"> -->
+<!-- Load dark mode CSS -->
+<link rel="stylesheet" href="{{ site.url }}/assets/css/dark-mode.css">
 
 <!-- HTML5 Shiv and Media Query Support -->
 <!--[if lt IE 9]>
 	<script src="{{ site.url }}/assets/js/vendor/html5shiv.min.js"></script>
 	<script src="{{ site.url }}/assets/js/vendor/respond.min.js"></script>
 <![endif]-->
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6J6KQY886"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-M6J6KQY886');
 </script>
+
 <!-- Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-<!-- <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'> -->
-
-<!-- Dark Mode Toggle Script -->
-<script src="{{ '/assets/js/dark-mode.js' | relative_url }}"></script>
-<!-- Dark Mode Support -->
-<link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
 
 <!-- Icons -->
 <!-- 16x16 -->
