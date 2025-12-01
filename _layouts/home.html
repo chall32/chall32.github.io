@@ -7,7 +7,17 @@
 {% include _head.html %}
 </head>
 
-<body class="home">
+<body class="home" style="background-color: #1a1a1a; color: #e0e0e0;">
+
+<!-- Reset inline styles if light mode -->
+<script>
+  (function() {
+    if (document.documentElement.getAttribute('data-theme') !== 'dark') {
+      document.body.style.backgroundColor = '#fff';
+      document.body.style.color = '#333332';
+    }
+  })();
+</script>
 
 {% include _browser-upgrade.html %}
 
