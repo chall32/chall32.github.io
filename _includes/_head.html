@@ -1,4 +1,31 @@
 <meta charset="utf-8">
+<!-- Dark mode script -->
+ <script>
+  (function() {
+    const theme = localStorage.getItem('theme') || 
+                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+    // Apply styles immediately
+    if (theme === 'dark') {
+      document.documentElement.style.backgroundColor = '#1a1a1a';
+      document.documentElement.style.color = '#e0e0e0';
+    }
+  })();
+</script>
+<!-- Critical inline CSS for instant theme application -->
+<style>
+  html[data-theme="dark"] {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+  }
+  html[data-theme="dark"] body {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+  }
+</style>
+<!-- Now load the rest of the CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/dark-mode.css' | relative_url }}">
 <script>
     var host = "polarclouds.co.uk";
     if ((host == window.location.host) && (window.location.protocol != "https:"))
@@ -49,14 +76,7 @@
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
 <!-- <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'> -->
-<script>
-  // Prevent flash of unstyled content (FOUC)
-  (function() {
-    const theme = localStorage.getItem('theme') || 
-                  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', theme);
-  })();
-</script>
+
 <!-- Dark Mode Toggle Script -->
 <script src="{{ '/assets/js/dark-mode.js' | relative_url }}"></script>
 <!-- Dark Mode Support -->
