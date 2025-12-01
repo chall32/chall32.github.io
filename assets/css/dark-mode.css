@@ -54,7 +54,7 @@
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 /* Headings */
@@ -70,7 +70,7 @@ p, li, td, th, span, div {
 /* Links - matching your exact link color scheme */
 a {
   color: var(--link-color);
-  transition: color 0.2s ease;
+  transition: color 0.15s ease;
 }
 
 a:hover {
@@ -88,7 +88,7 @@ a:focus {
 /* Author social links - special handling for black links */
 .author-social {
   color: var(--social-link-color) !important;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: color 0.15s ease, transform 0.15s ease;
 }
 
 .author-social:visited {
@@ -196,7 +196,7 @@ blockquote {
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
   box-shadow: 0 2px 8px var(--shadow);
 }
 
@@ -215,7 +215,7 @@ blockquote {
   height: 24px;
   stroke: var(--text-primary);
   fill: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.15s ease;
 }
 
 .dark-mode-toggle:hover svg {
@@ -226,7 +226,7 @@ blockquote {
 .sun-icon,
 .moon-icon {
   position: absolute;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
 [data-theme="light"] .sun-icon {
@@ -256,7 +256,7 @@ blockquote {
 
 /* Images - ensure they look good in dark mode */
 img {
-  transition: opacity 0.3s ease;
+  transition: opacity 0.15s ease;
 }
 
 [data-theme="dark"] img {
