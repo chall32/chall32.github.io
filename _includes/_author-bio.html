@@ -9,9 +9,10 @@
 {% else %}
 	<img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo">
 {% endif %}
-
   <h3 itemprop="name">{{ author.name }}</h3>
-  <p>{{ author.bio }}</p>
+  <h4 itemprop="bio" style="margin-top: -5px;">{{ author.bio }}</h4>
+  <p style="margin-top: -5px;">I help modernise technical infrastructure so apps and data run flawlessly across on-prem and the cloud</p>
+  <p>
   {% if author.email %}<a href="mailto:{{ author.email }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i> Email</a>{% endif %}
   {% if author.bluesky-personal %}<a href="https://bsky.app/profile/{{ author.bluesky-personal }}" class="author-social" target="_blank"><i class="fa-brands fa-square-bluesky"></i>&nbsp; &nbsp; Bluesky</a>{% endif %}
   {% if author.bluesky %}<a href="https://bsky.app/profile/{{ author.bluesky }}" class="author-social" target="_blank"><i class="fa-brands fa-square-bluesky"></i>&nbsp; &nbsp; PolarCloudsUK</a>{% endif %}
@@ -35,12 +36,14 @@
   {% if author.weibo %}<a href="http://www.weibo.com/{{ author.weibo }}" class="author-social" target="_blank"><i class="fa fa-fw fa-weibo"></i> Weibo</a>{% endif %}
   {% if author.flickr %}<a href="http://www.flickr.com/{{ author.flickr }}" class="author-social" target="_blank"><i class="fa fa-fw fa-flickr"></i> Flickr</a>{% endif %}
   {% if author.codepen %}<a href="http://codepen.io/{{ author.codepen }}" class="author-social" target="_blank"><i class="fa fa-fw fa-codepen"></i> CodePen</a>{% endif %}
-<a target="_blank" href="https://event.nutanix.com/multicloudexperts1"><img src="{{ site.url }}/images/multicloud-expert-community/multicloud-expert-community-01.png" class="bio-badge" alt="Join Nutanix Multicloud Experts"></a>
+</p>
+<p>
 <a target="_blank" href="https://www.credly.com/badges/2450b422-6849-4560-bdba-ecc0334b8e41/public_url"><img src="{{ site.url }}/images/pages/nutanix-certified-master-mci.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Master - Multicloud Infrastructure 6"></a>
-<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img src="{{ site.url }}/images/pages/vexpert-6years.png" class="bio-badge" alt="{{ author.name }} VMware vExpert 2025"></a>
+<a target="_blank" href="https://www.credly.com/badges/d596cb69-1b1c-41c6-b02b-4a9ed11135af/public_url"><img src="{{ site.url }}/images/pages/ncs-mci-adv.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Master - Infrastucture Services"></a> 
 <a target="_blank" href="https://www.credly.com/badges/845e4f77-016e-4111-b75b-22da03634407/public_url"><img src="{{ site.url }}/images/pages/nutanix-certified-professional-ci.png" class="bio-badge" alt="Nutanix Certified Professional - Cloud Integration" ></a> 
 <a target="_blank" href="https://www.credly.com/badges/231fa9a9-fd75-4cc9-b7b2-f7e7a50a2c18/public_url"><img src="{{ site.url }}/images/pages/nutanix-certified-professional-mci.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Professional - Multicloud Infrastructure 6"></a>
-<a target="_blank" href="https://www.credly.com/badges/3f3278eb-690f-4af3-a301-265c7427c821/public_url"><img src="{{ site.url }}/images/pages/ncp-ns.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Professional - Networking and Security"></a>
-<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img src="{{ site.url }}/images/pages/vexpert2025.png" class="bio-badge" alt="{{ author.name }} VMware vExpert 2025"></a>
-<a target="_blank" href="https://vexpert.vmware.com/directory/5800"><img src="{{ site.url }}/images/pages/vexpert2024.png" class="bio-badge" alt="{{ author.name }} VMware vExpert 2024"></a>
-</div>
+<a target="_blank" href="https://www.credly.com/badges/f789bd0b-7204-4fd3-b448-c685b0d6ea8d/public_url"><img src="{{ site.url }}/images/pages/ncp-ns.png" class="bio-badge" alt="{{ author.name }} Nutanix Certified Professional - Networking and Security"></a>
+<a target="_blank" href="{{ site.url }}/pages/qualifications/"><img src="{{ site.url }}/images/pages/vcp-dcv.png" class="bio-badge" alt="{{ author.name }} VMware Broadcom VCP-DCV"></a> 
+<a target="_blank" href="https://www.nutanix.com/multicloud-experts-community"><img src="{{ site.url }}/images/multicloud-expert-community/multicloud-expert-community-01.png" class="bio-badge" alt="Join Nutanix Multicloud Experts"></a>
+<a target="_blank" href="{{ site.url }}/pages/qualifications/"><img src="{{ site.url }}/images/pages/vexpert-6years.png" class="bio-badge" alt="{{ author.name }} VMware vExpert 2025"></a>
+</p></div>
